@@ -106,7 +106,7 @@ export default function CartDrawer() {
                 <button
                   onClick={checkout}
                   disabled={loading}
-                  className="w-full bg-ink py-4 text-sm uppercase tracking-widest2 text-bone transition hover:opacity-90 disabled:opacity-50"
+                  className="w-full bg-ink py-4 text-sm uppercase tracking-widest2 text-bone transition hover:bg-gold disabled:opacity-50"
                 >
                   {loading ? "Redirecting…" : "Checkout"}
                 </button>

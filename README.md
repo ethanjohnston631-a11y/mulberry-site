@@ -1,6 +1,23 @@
-# Mulberry
+# Mulberry Empire
 
-Premium hoodie e-commerce site. Next.js App Router, Tailwind, Framer Motion, Stripe Checkout.
+Premium luxury-brand e-commerce site for The Sovereign Hoodie — a flagship hoodie lined in Mulberry silk. Next.js App Router, Tailwind, Framer Motion, Stripe Checkout.
+
+## Recommended Photography & Asset Shoot List
+
+Every `ImagePlaceholder` component on the site is labeled "Recommended Asset" with a caption describing exactly what should replace it. Priority order for a future shoot:
+
+1. **Hero / lifestyle** — model wearing The Sovereign, cinematic lighting, used on homepage hero and Our Story hero.
+2. **Macro fabric photography** — close-up of the 490gsm fleece weave (exterior) and the 22-momme silk lining (hood interior) — used on the product page "Material Story" section and homepage "Materials" section.
+3. **Silk filament macro** — extreme close-up of raw silk fiber/thread, used on the Why Silk hero.
+4. **Silkworm & cocoon imagery** — used to reinforce brand origin (could appear on Why Silk or History pages).
+5. **Ancient sericulture illustration** — historical/illustrative, used on the History page timeline (Ancient China, Han/Tang dynasties).
+6. **Silk Road map or caravan illustration** — used on the homepage Heritage section and History hero.
+7. **Royal court silk garment (historical)** — reinforces the "fabric of emperors" timeline entry.
+8. **Care guide visual instructions** — 5 images, one per care step (washing, drying, storage, maintenance, longevity).
+9. **Editorial / journal photography** — 3+ images for Journal article cards.
+10. **Founder portrait or studio imagery** — Our Story hero, reinforces the founder-driven narrative.
+
+All placeholders are built with the brand's ink/gold palette and the silkworm watermark so the site reads as intentional, not broken, until real photography is dropped in — simply swap the `<Image>` `src` in each `ImagePlaceholder` usage (or replace the component instance directly) once assets are ready.
 
 ## Setup
 

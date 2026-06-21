@@ -62,7 +62,7 @@ export default function AddToCart({ product }: { product: Product }) {
                 setError(false);
               }}
               className={`border py-3 text-xs uppercase transition ${
-                size === s ? "border-ink bg-ink text-bone" : "border-black/15 hover:border-black/40"
+                size === s ? "border-ink bg-ink text-bone" : "border-black/15 hover:border-gold"
               }`}
             >
               {s}
@@ -75,7 +75,7 @@ export default function AddToCart({ product }: { product: Product }) {
       <motion.button
         onClick={handleAdd}
         whileTap={{ scale: 0.98 }}
-        className="w-full bg-ink py-4 text-sm uppercase tracking-widest2 text-bone transition hover:opacity-90"
+        className="w-full bg-ink py-4 text-sm uppercase tracking-widest2 text-bone transition hover:bg-gold"
       >
         Add to Bag — ${product.price}
       </motion.button>

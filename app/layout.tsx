@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/lib/cart-context";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 
+const inter = Inter({ subsets: ["latin"], variable: "--inter-font", display: "swap" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--playfair-font", display: "swap" });
+
 export const metadata: Metadata = {
-  title: "Mulberry",
-  description: "Premium essential hoodies. Considered design, exceptional materials.",
+  title: "Mulberry Empire — Built on Mulberry Silk",
+  description:
+    "Mulberry Empire crafts flagship essentials lined in Mulberry silk — for those who measure success in details, not trends.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         <CartProvider>
           <Header />

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "Helvetica Neue", Arial, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-sans: var(--inter-font, "Helvetica Neue", Arial, sans-serif);
+  --font-serif: var(--playfair-font, Georgia, serif);
 }
 
 * {
@@ -16,11 +16,31 @@ html {
 }
 
 body {
-  background-color: #f7f5f2;
-  color: #0a0a0a;
+  background-color: #faf7f1;
+  color: #0b0b0c;
 }
 
 ::selection {
-  background: #0a0a0a;
-  color: #f7f5f2;
+  background: #0b0b0c;
+  color: #f4efe6;
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(169, 130, 79, 0.6), transparent);
+}
+
+.gold-text {
+  color: #a9824f;
+}
+
+.fabric-placeholder {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 2px, transparent 2px, transparent 8px),
+    linear-gradient(135deg, #232220, #14130f);
+}
+
+.crest-watermark {
+  opacity: 0.06;
+  filter: invert(1);
 }

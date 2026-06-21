@@ -4,16 +4,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#0a0a0a",
-        bone: "#f7f5f2",
-        stone: "#8a8580",
+        ink: "#0b0b0c",
+        charcoal: "#191816",
+        bone: "#f4efe6",
+        ivory: "#faf7f1",
+        stone: "#8a8378",
+        gold: "#a9824f",
+        "gold-light": "#cdab78",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)", "Georgia", "serif"],
       },
       letterSpacing: {
-        widest2: "0.2em",
+        widest2: "0.22em",
+        widest3: "0.32em",
+      },
+      backgroundImage: {
+        "gold-line": "linear-gradient(90deg, transparent, #a9824f, transparent)",
       },
     },
   },
