@@ -21,7 +21,7 @@ export default function ProductsPage() {
           <SectionLabel>The Collection</SectionLabel>
           <h1 className="font-serif text-4xl font-normal text-ink md:text-5xl">The Sovereign Hoodie</h1>
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-stone">
-            One silhouette. Four colorways. Lined in Mulberry silk. Choose yours.
+            One silhouette. Five colorways. Lined in Mulberry silk. Choose yours.
           </p>
         </Reveal>
 
