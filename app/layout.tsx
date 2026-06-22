@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--inter-font", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--playfair-font", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Mulberry Empire — Built on Mulberry Silk",
+  title: "Mulberry — Empire of Silk",
   description:
-    "Mulberry Empire crafts flagship essentials lined in Mulberry silk — for those who measure success in details, not trends.",
+    "Mulberry crafts flagship essentials lined in Mulberry silk — for those who measure success in decades, not seasons.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

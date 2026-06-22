@@ -12,17 +12,9 @@ export default function Home() {
     <main className="bg-ivory">
       {/* HERO */}
       <section className="relative flex h-[100vh] min-h-[640px] items-end overflow-hidden bg-ink">
-        <Image src="/hero.png" alt="The Sovereign Hoodie" fill priority className="object-cover opacity-80" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/10" />
-        <Image
-          src="/logo.png"
-          alt=""
-          width={500}
-          height={500}
-          className="crest-watermark pointer-events-none absolute -right-24 -top-24 h-[520px] w-[520px] object-contain"
-        />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 text-bone lg:px-10">
-          <p className="mb-5 text-[11px] uppercase tracking-widest3 text-gold-light">Mulberry Empire</p>
+          <p className="mb-5 text-[11px] uppercase tracking-widest3 text-gold-light">Empire of Silk</p>
           <h1 className="max-w-2xl font-serif text-5xl font-normal leading-[1.05] md:text-7xl">
             Not made for a season.
             <br />
@@ -55,14 +47,14 @@ export default function Home() {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="font-serif text-3xl font-normal leading-relaxed text-ink md:text-4xl">
-            We do not chase trends. We refine one piece, season after season, until it becomes something you
-            hand down — not something you replace.
+            We don't chase what's fashionable. We refine one piece, year after year, until it's something you
+            hand down instead of replace.
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-stone">
-            Mulberry Empire exists because most clothing is built to be discarded. Ours is built to be kept —
-            in the same drawer as your watch, your blade, the things you don't replace.
+            Mulberry exists because most clothing is made to be worn once and forgotten. Ours is made to be
+            kept — built with the same care as the few other things in your life made to last.
           </p>
         </Reveal>
       </section>
@@ -160,7 +152,7 @@ export default function Home() {
           <Reveal>
             <SectionLabel>Materials</SectionLabel>
             <h2 className="max-w-xl font-serif text-4xl font-normal text-ink md:text-5xl">
-              Every detail considered. Nothing left to trend.
+              Every detail considered. Nothing left to chance.
             </h2>
           </Reveal>
           <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -184,9 +176,9 @@ export default function Home() {
         </Reveal>
         <div className="mt-10 grid grid-cols-1 gap-12 md:grid-cols-3">
           {[
-            { q: "The only hoodie I've owned that feels like it was made for me specifically.", a: "— D. Whitfield" },
-            { q: "I didn't expect a hoodie to change how I think about quality. This one did.", a: "— M. Castellan" },
-            { q: "It doesn't look loud. It looks correct. That's rarer.", a: "— R. Adesina" },
+            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
+            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
+            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
           ].map((t, i) => (
             <Reveal key={t.a} delay={i * 0.08}>
               <p className="font-serif text-lg leading-relaxed text-ink">"{t.q}"</p>

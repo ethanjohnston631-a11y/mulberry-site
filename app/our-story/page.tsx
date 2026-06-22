@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-export const metadata = { title: "Our Story — Mulberry Empire" };
+export const metadata = { title: "Our Story — Mulberry" };
 
 export default function OurStoryPage() {
   return (
@@ -27,13 +27,13 @@ export default function OurStoryPage() {
       <section className="mx-auto max-w-3xl px-6 py-24 lg:px-10">
         <Reveal>
           <p className="font-serif text-2xl leading-relaxed text-ink">
-            Mulberry Empire began with a frustration, not a business plan.
+            Mulberry began with a frustration, not a business plan.
           </p>
         </Reveal>
         <Reveal delay={0.05}>
           <p className="mt-8 text-base leading-relaxed text-stone">
             Every closet I owned was full of things bought on impulse and discarded within a year — fast
-            fashion dressed up as streetwear, logos chasing whatever was trending that month. None of it
+            fashion dressed up as streetwear, logos chasing whatever was popular that month. None of it
             held up. None of it meant anything. And somewhere in there, I realized the problem wasn't taste.
             It was standards.
           </p>
@@ -48,10 +48,10 @@ export default function OurStoryPage() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="mt-6 text-base leading-relaxed text-stone">
-            We named it Mulberry Empire after the tree that feeds the silkworm — the quiet, unglamorous
+            We named the company Mulberry, after the tree that feeds the silkworm — the quiet, unglamorous
             beginning of the most prized textile in human history. Mulberry silk doesn't announce itself.
             It simply outperforms everything else, for thousands of years running. That's the standard we
-            hold every piece to.
+            hold every piece to, and why we think of what we're building as an empire of silk.
           </p>
         </Reveal>
       </section>
@@ -62,7 +62,7 @@ export default function OurStoryPage() {
             {[
               { t: "Quality Over Quantity", c: "One flagship piece, refined continuously, instead of a hundred forgettable ones." },
               { t: "Craftsmanship Over Convenience", c: "Small-batch construction and genuine Mulberry silk cost more to produce. We accept that trade." },
-              { t: "Self-Respect Over Trend", c: "We dress for the decade we're building, not the algorithm we're feeding." },
+              { t: "Self-Respect Over Popularity", c: "We dress for the decade we're building, not the algorithm we're feeding." },
             ].map((item, i) => (
               <Reveal key={item.t} delay={i * 0.08}>
                 <h3 className="font-serif text-xl text-gold-light">{item.t}</h3>

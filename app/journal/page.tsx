@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-export const metadata = { title: "Journal — Mulberry Empire" };
+export const metadata = { title: "Journal — Mulberry" };
 
 const POSTS = [
   { t: "On Building a Wardrobe That Respects Your Time", c: "Why fewer, better pieces compound the way good habits do." },
@@ -19,6 +19,11 @@ export default function JournalPage() {
           <h1 className="font-serif text-4xl font-normal text-ink md:text-5xl">
             Notes on craft, discipline, and the silk trade.
           </h1>
+          <p className="mt-4 max-w-lg text-sm leading-relaxed text-stone">
+            The Journal is where we go deeper than a product page allows — the reasoning behind our
+            materials, the standards we hold the brand to, and the history of Mulberry silk itself. New
+            entries are added periodically; check back, or subscribe to the Dispatch in the footer.
+          </p>
         </Reveal>
       </section>
 

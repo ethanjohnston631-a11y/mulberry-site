@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-export const metadata = { title: "Care Guide — Mulberry Empire" };
+export const metadata = { title: "Care Guide — Mulberry" };
 
 const STEPS = [
   {
@@ -39,7 +39,7 @@ export default function CareGuidePage() {
         <Reveal>
           <SectionLabel>Care Guide</SectionLabel>
           <h1 className="font-serif text-4xl font-normal text-ink md:text-5xl">
-            Maintain it well. It was built to last decades.
+            Maintain it well. With proper care, it's made to last for years.
           </h1>
         </Reveal>
       </section>

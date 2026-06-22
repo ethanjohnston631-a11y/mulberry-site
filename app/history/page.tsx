@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-export const metadata = { title: "The History of Mulberry Silk — Mulberry Empire" };
+export const metadata = { title: "The History of Mulberry Silk — Mulberry" };
 
 const TIMELINE = [
   {

@@ -23,8 +23,15 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-black/5 bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/logo.png" alt="Mulberry Empire" width={30} height={30} className="h-7 w-7 object-contain" />
-          <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry Empire</span>
+          <span className="relative h-8 w-8 overflow-hidden rounded-full">
+            <Image
+              src="/logo.png"
+              alt="Mulberry"
+              fill
+              className="scale-[2.3] object-cover object-[50%_18%]"
+            />
+          </span>
+          <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry</span>
         </Link>
 
         <nav className="hidden items-center gap-9 text-[11px] uppercase tracking-widest2 md:flex">

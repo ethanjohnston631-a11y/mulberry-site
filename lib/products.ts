@@ -41,8 +41,8 @@ export const PRODUCTS: Product[] = [
         copy: "Silk breathes and insulates at once — warmer when you need it, cooler when you don't. The fleece shell does the heavy lifting; the lining does the rest.",
       },
       {
-        title: "Built to Outlast Trends",
-        copy: "No seasonal colorways, no logos chasing a moment. One silhouette, refined every year, made to be worn for a decade.",
+        title: "Built Beyond the Season",
+        copy: "No seasonal colorways, no logos chasing a moment. One silhouette, refined every year, made to be worn for years to come.",
       },
     ],
     faqs: [

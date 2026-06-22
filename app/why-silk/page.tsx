@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-export const metadata = { title: "Why Silk — Mulberry Empire" };
+export const metadata = { title: "Why Silk — Mulberry" };
 
 const BENEFITS = [
   {

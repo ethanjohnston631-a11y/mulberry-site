@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 
-export const metadata = { title: "FAQ — Mulberry Empire" };
+export const metadata = { title: "FAQ — Mulberry" };
 
 const FAQS = [
   { q: "What makes The Sovereign different from a regular hoodie?", a: "The hood and collar are lined in 22-momme Mulberry silk — the same grade used in luxury bedding — reducing friction against hair and skin while the heavyweight fleece shell holds its shape for years." },

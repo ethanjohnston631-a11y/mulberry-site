@@ -15,8 +15,8 @@ export default function ContactPage() {
           <h1 className="font-serif text-4xl font-normal text-ink md:text-5xl">We read everything.</h1>
           <p className="mt-4 text-sm leading-relaxed text-stone">
             Questions about sizing, orders, or the silk itself — reach us directly at{" "}
-            <a href="mailto:support@mulberryempire.com" className="border-b border-gold text-gold">
-              support@mulberryempire.com
+            <a href="mailto:info@mulberryempire.com" className="border-b border-gold text-gold">
+              info@mulberryempire.com
             </a>
             , or use the form below.
           </p>

@@ -108,7 +108,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           <Reveal>
             <SectionLabel>Care</SectionLabel>
             <h2 className="max-w-xl font-serif text-3xl font-normal text-ink md:text-4xl">
-              Treat it well. It will outlast the trend cycle.
+              Treat it well. It's made to be kept for years, not seasons.
             </h2>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-stone">
               Machine wash cold, inside out, gentle cycle. Lay flat to dry. Never bleach. Full instructions

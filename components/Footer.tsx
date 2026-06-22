@@ -14,14 +14,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <Image src="/logo.png" alt="Mulberry Empire" width={28} height={28} className="h-7 w-7 object-contain invert" />
-              <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry Empire</span>
+              <span className="relative h-7 w-7 overflow-hidden rounded-full">
+                <Image src="/logo.png" alt="Mulberry" fill className="scale-[2.3] object-cover object-[50%_18%] invert" />
+              </span>
+              <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry</span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-bone/60">
               A flagship hoodie, lined in Mulberry silk, built for those who measure success in decades — not seasons.
               Crafted in limited runs. Worn for years.
             </p>
-            <p className="mt-6 text-[11px] uppercase tracking-widest2 text-gold-light">Est. for the long run.</p>
+            <p className="mt-6 text-[11px] uppercase tracking-widest2 text-gold-light">Empire of Silk.</p>
           </div>
 
           <div>
@@ -46,9 +48,12 @@ export default function Footer() {
 
           <div>
             <p className="mb-4 text-[11px] uppercase tracking-widest2 text-bone/40">The Dispatch</p>
-            <p className="mb-4 text-sm text-bone/60">Notes on craft, discipline, and the silk trade. No noise.</p>
+            <p className="mb-4 text-sm text-bone/60">
+              A short email from Mulberry, sent monthly — new releases, care notes, and the occasional story
+              from the silk trade. No spam, unsubscribe anytime.
+            </p>
             {submitted ? (
-              <p className="text-sm text-gold-light">You're on the list.</p>
+              <p className="text-sm text-gold-light">You're in. Watch your inbox.</p>
             ) : (
               <form
                 onSubmit={(e) => {
@@ -66,7 +71,7 @@ export default function Footer() {
                   className="w-full bg-transparent text-sm text-bone placeholder:text-bone/40 focus:outline-none"
                 />
                 <button type="submit" className="text-[11px] uppercase tracking-widest2 text-gold-light">
-                  Join
+                  Enter the Empire
                 </button>
               </form>
             )}
@@ -76,14 +81,16 @@ export default function Footer() {
         <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-bone/10 pt-8 text-[11px] uppercase tracking-widest2 text-bone/40 md:flex-row">
           <p>© {new Date().getFullYear()} Mulberry Empire. All Rights Reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="transition hover:text-bone">Instagram</a>
-            <a href="#" className="transition hover:text-bone">Pinterest</a>
-            <a href="mailto:support@mulberryempire.com" className="transition hover:text-bone">Email</a>
+            {/* TODO: replace with the real Instagram handle URL */}
+            <a href="https://instagram.com/REPLACE_WITH_INSTAGRAM_HANDLE" className="transition hover:text-bone">
+              Instagram
+            </a>
+            <a href="mailto:info@mulberryempire.com" className="transition hover:text-bone">Email</a>
           </div>
           <div className="flex gap-6">
-            <span>Privacy Policy</span>
-            <span>Terms</span>
-            <span>Shipping</span>
+            <Link href="/privacy-policy" className="transition hover:text-bone">Privacy Policy</Link>
+            <Link href="/terms" className="transition hover:text-bone">Terms</Link>
+            <Link href="/shipping" className="transition hover:text-bone">Shipping</Link>
           </div>
         </div>
       </div>
