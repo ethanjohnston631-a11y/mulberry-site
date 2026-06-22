@@ -4,7 +4,7 @@ import SectionLabel from "@/components/SectionLabel";
 export const metadata = { title: "FAQ — Mulberry" };
 
 const FAQS = [
-  { q: "What makes The Sovereign different from a regular hoodie?", a: "The hood and collar are lined in 22-momme Mulberry silk — the same grade used in luxury bedding — reducing friction against hair and skin while the heavyweight fleece shell holds its shape for years." },
+  { q: "What makes The Sovereign different from a regular hoodie?", a: "The hood is lined in 22-momme Mulberry silk — the same grade used in luxury bedding — reducing friction against hair and skin while the heavyweight washed fleece shell holds its shape for years." },
   { q: "How do I choose a size?", a: "The Sovereign is cut boxy and slightly oversized by design. If you prefer a closer fit, size down one size. Full measurements are in our Care Guide." },
   { q: "Where are your products made?", a: "Cut and sewn in small batches to control quality at every stage, from fleece sourcing to the final silk stitch." },
   { q: "How should I wash it?", a: "Cold, inside out, gentle cycle. Lay flat to dry. Full instructions are on our Care Guide page." },

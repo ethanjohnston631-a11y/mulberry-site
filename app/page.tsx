@@ -4,6 +4,8 @@ import { PRODUCTS } from "@/lib/products";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import { SilkRoadMapArt } from "@/components/AncientArt";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   const product = PRODUCTS[0];
@@ -58,6 +60,8 @@ export default function Home() {
           </p>
         </Reveal>
       </section>
+
+      <Marquee />
 
       {/* FEATURED PRODUCT */}
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-10">
@@ -141,7 +145,9 @@ export default function Home() {
             </Link>
           </Reveal>
           <Reveal delay={0.1}>
-            <ImagePlaceholder label="Recommended Asset" caption="Silk Road trade route illustration" tone="gold" />
+            <div className="aspect-[4/5]">
+              <SilkRoadMapArt />
+            </div>
           </Reveal>
         </div>
       </section>

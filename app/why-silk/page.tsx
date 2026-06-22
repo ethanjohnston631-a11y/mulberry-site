@@ -87,7 +87,7 @@ export default function WhySilkPage() {
                 leaves, producing a coarser, less uniform filament. Mulberry silkworms eat only mulberry
                 leaves under controlled conditions, producing the longest, smoothest, most consistent
                 filament — graded by momme weight, with higher momme meaning denser, more durable silk.
-                We use 22-momme, the grade favored for luxury bedding and now lining our hood and collar.
+                We use 22-momme, the grade favored for luxury bedding and now lining our hood.
               </p>
             </Reveal>
             <Reveal delay={0.08}>

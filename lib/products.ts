@@ -7,7 +7,7 @@ export type Product = {
   details: string[];
   benefits: { title: string; copy: string }[];
   faqs: { q: string; a: string }[];
-  colors: { name: string; image: string }[];
+  colors: { name: string; swatch: string; image: string; backImage: string }[];
   sizes: string[];
 };
 
@@ -18,14 +18,14 @@ export const PRODUCTS: Product[] = [
     tagline: "The flagship. Silk-lined. Built for the long run.",
     price: 248,
     description:
-      "Heavyweight French terry on the outside. Mulberry silk on the inside. The Sovereign is the only hoodie cut to feel like an heirloom — boxy through the body, dropped at the shoulder, and lined at the hood and collar in 22-momme Mulberry silk so the one piece that touches your skin most is also the finest.",
+      "Heavyweight washed fleece on the outside. Mulberry silk on the inside. The Sovereign is cut oversized and boxy, finished with a hand-distressed wash and raised metallic graphics — and lined at the hood in 22-momme Mulberry silk so the one piece that touches your skin most is also the finest.",
     details: [
-      "490gsm heavyweight brushed French terry shell",
-      "22-momme Mulberry silk hood and collar lining",
-      "Dropped shoulder, boxy silhouette",
-      "Double-needle ribbed cuffs and hem",
-      "Garment-dyed in small batches for depth of color",
-      "Reinforced kangaroo pocket with hidden interior pocket",
+      "Heavyweight washed cotton fleece shell",
+      "22-momme Mulberry silk hood lining",
+      "Oversized, boxy silhouette with dropped shoulder",
+      "Hand-distressed wash, raised metallic graphic detailing",
+      "Embroidered silkworm mark on the chest",
+      "Reinforced kangaroo pocket",
     ],
     benefits: [
       {
@@ -41,18 +41,18 @@ export const PRODUCTS: Product[] = [
         copy: "Silk breathes and insulates at once — warmer when you need it, cooler when you don't. The fleece shell does the heavy lifting; the lining does the rest.",
       },
       {
-        title: "Built Beyond the Season",
-        copy: "No seasonal colorways, no logos chasing a moment. One silhouette, refined every year, made to be worn for years to come.",
+        title: "Made in Small Batches",
+        copy: "Each wash and graphic is applied by hand in limited runs, so no two batches are perfectly identical — and once a run sells out, it doesn't come back the same way twice.",
       },
     ],
     faqs: [
       {
         q: "Why line a hoodie in silk?",
-        a: "The hood and collar are the parts of a hoodie that touch your hair, neck, and face most. Lining them in Mulberry silk — the same material used in heirloom bedding — turns the most-touched surface of the garment into the most refined one.",
+        a: "The hood is the part of a hoodie that touches your hair and neck most. Lining it in Mulberry silk — the same material used in heirloom bedding — turns the most-touched surface of the garment into the most refined one.",
       },
       {
         q: "How should I size The Sovereign?",
-        a: "It's cut boxy and slightly oversized by design. If you prefer a closer fit, size down. Full measurements are in the Care Guide.",
+        a: "It's cut oversized and boxy by design. If you prefer a closer fit, size down. Full measurements are in the Care Guide.",
       },
       {
         q: "Is the silk lining washable?",
@@ -60,14 +60,15 @@ export const PRODUCTS: Product[] = [
       },
       {
         q: "Where is it made?",
-        a: "Cut and sewn in small batches to control quality at every stage, from fleece selection to the final silk stitch.",
+        a: "Cut, washed, and finished in small batches to control quality at every stage, from fleece selection to the final silk stitch.",
       },
     ],
     colors: [
-      { name: "Black", image: "/products/hoodie-black.png" },
-      { name: "Graphite", image: "/products/hoodie-graphite.png" },
-      { name: "Clay", image: "/products/hoodie-clay.png" },
-      { name: "Cream", image: "/products/hoodie-cream.png" },
+      { name: "Black", swatch: "#19191b", image: "/products/black.png", backImage: "/products/black-back.png" },
+      { name: "Brown", swatch: "#9c7e63", image: "/products/brown.png", backImage: "/products/brown-back.png" },
+      { name: "Green", swatch: "#5c6b5e", image: "/products/green.png", backImage: "/products/green-back.png" },
+      { name: "Grey", swatch: "#83837c", image: "/products/grey.png", backImage: "/products/grey-back.png" },
+      { name: "Navy Blue", swatch: "#454f63", image: "/products/navy-blue.png", backImage: "/products/navy-blue-back.png" },
     ],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   },

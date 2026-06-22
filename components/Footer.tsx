@@ -14,8 +14,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="relative h-7 w-7 overflow-hidden rounded-full">
-                <Image src="/logo.png" alt="Mulberry" fill className="scale-[2.3] object-cover object-[50%_18%] invert" />
+              <span className="relative block h-7 w-7 shrink-0 overflow-hidden rounded-full invert">
+                <Image
+                  src="/logo.png"
+                  alt="Mulberry"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "51% 36%", transform: "scale(1.8)" }}
+                />
               </span>
               <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry</span>
             </div>
@@ -81,8 +86,12 @@ export default function Footer() {
         <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-bone/10 pt-8 text-[11px] uppercase tracking-widest2 text-bone/40 md:flex-row">
           <p>© {new Date().getFullYear()} Mulberry Empire. All Rights Reserved.</p>
           <div className="flex gap-6">
-            {/* TODO: replace with the real Instagram handle URL */}
-            <a href="https://instagram.com/REPLACE_WITH_INSTAGRAM_HANDLE" className="transition hover:text-bone">
+            <a
+              href="https://instagram.com/mulberry.hoods"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-bone"
+            >
               Instagram
             </a>
             <a href="mailto:info@mulberryempire.com" className="transition hover:text-bone">Email</a>

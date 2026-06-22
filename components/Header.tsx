@@ -23,12 +23,12 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-black/5 bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="relative h-8 w-8 overflow-hidden rounded-full">
+          <span className="relative block h-8 w-8 shrink-0 overflow-hidden rounded-full">
             <Image
               src="/logo.png"
               alt="Mulberry"
               fill
-              className="scale-[2.3] object-cover object-[50%_18%]"
+              style={{ objectFit: "cover", objectPosition: "51% 36%", transform: "scale(1.8)" }}
             />
           </span>
           <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry</span>

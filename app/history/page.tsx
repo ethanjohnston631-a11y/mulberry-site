@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import { SilkRoadMapArt, SericultureArt, RoyalSilkArt, CaravanArt } from "@/components/AncientArt";
 
 export const metadata = { title: "The History of Mulberry Silk — Mulberry" };
 
@@ -45,7 +45,7 @@ const TIMELINE = [
     era: "Today",
     title: "Mulberry Silk, The Gold Standard",
     copy:
-      "Of every silk produced globally, Mulberry silk — from silkworms fed exclusively on mulberry leaves — remains the benchmark for quality, prized in the world's finest bedding, garments, and now, our hood and collar lining.",
+      "Of every silk produced globally, Mulberry silk — from silkworms fed exclusively on mulberry leaves — remains the benchmark for quality, prized in the world's finest bedding, garments, and now, our hood lining.",
   },
 ];
 
@@ -53,13 +53,10 @@ export default function HistoryPage() {
   return (
     <main className="bg-ivory">
       <section className="relative flex h-[65vh] min-h-[440px] items-end overflow-hidden bg-ink text-bone">
-        <ImagePlaceholder
-          label="Recommended Asset"
-          caption="Ancient Silk Road illustration / historical map"
-          tone="ink"
-          fill
-          showMark={false}
-        />
+        <div className="absolute inset-0 h-full w-full opacity-90">
+          <SilkRoadMapArt />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/30" />
         <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-16 lg:px-10">
           <p className="mb-4 text-[11px] uppercase tracking-widest3 text-gold-light">The History</p>
           <h1 className="font-serif text-4xl font-normal leading-tight md:text-6xl">
@@ -96,13 +93,19 @@ export default function HistoryPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <Reveal>
-              <ImagePlaceholder label="Recommended Asset" caption="Ancient sericulture illustration" tone="ink" />
+              <div className="aspect-[4/5]">
+                <SericultureArt />
+              </div>
             </Reveal>
             <Reveal delay={0.06}>
-              <ImagePlaceholder label="Recommended Asset" caption="Royal court silk garment, historical" tone="gold" />
+              <div className="aspect-[4/5]">
+                <RoyalSilkArt />
+              </div>
             </Reveal>
             <Reveal delay={0.12}>
-              <ImagePlaceholder label="Recommended Asset" caption="Silk Road caravan illustration" tone="ink" />
+              <div className="aspect-[4/5]">
+                <CaravanArt />
+              </div>
             </Reveal>
           </div>
         </div>
