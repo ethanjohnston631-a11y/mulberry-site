@@ -9,19 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "framer-motion": "^11.3.8",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "stripe": "^16.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.19",
+    "playwright": "^1.61.1",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
     "typescript": "^5.5.3"
-  }
+  },
+  "description": "Premium luxury-brand e-commerce site for The Sovereign Hoodie — a flagship hoodie lined in Mulberry silk. Next.js App Router, Tailwind, Framer Motion, Stripe Checkout.",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanjohnston631-a11y/mulberry-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ethanjohnston631-a11y/mulberry-site/issues"
+  },
+  "homepage": "https://github.com/ethanjohnston631-a11y/mulberry-site#readme"
 }
