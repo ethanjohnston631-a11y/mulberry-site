@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata = { title: "Our Story — Mulberry" };
 
@@ -9,12 +9,12 @@ export default function OurStoryPage() {
   return (
     <main className="bg-ivory">
       <section className="relative flex h-[70vh] min-h-[460px] items-end overflow-hidden bg-ink text-bone">
-        <ImagePlaceholder
-          label="Recommended Asset"
-          caption="Founder portrait or studio imagery"
-          tone="ink"
-          fill
-          showMark={false}
+        <Image
+          src="/logo.png"
+          alt=""
+          width={600}
+          height={600}
+          className="crest-watermark pointer-events-none absolute left-1/2 top-1/2 h-[640px] w-[640px] -translate-x-1/2 -translate-y-1/2 object-contain"
         />
         <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-16 lg:px-10">
           <p className="mb-4 text-[11px] uppercase tracking-widest3 text-gold-light">Our Story</p>

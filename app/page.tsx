@@ -3,8 +3,8 @@ import Link from "next/link";
 import { PRODUCTS } from "@/lib/products";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { SilkRoadMapArt } from "@/components/AncientArt";
+import { FleeceWeaveArt, SilkSheenArt, StitchDetailArt } from "@/components/TextureArt";
 import Marquee from "@/components/Marquee";
 
 export default function Home() {
@@ -163,28 +163,34 @@ export default function Home() {
           </Reveal>
           <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
             <Reveal>
-              <ImagePlaceholder label="Recommended Asset" caption="Macro fleece fiber photography" />
+              <div className="aspect-[4/5]">
+                <FleeceWeaveArt />
+              </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <ImagePlaceholder label="Recommended Asset" caption="22-momme Mulberry silk swatch" tone="gold" />
+              <div className="aspect-[4/5]">
+                <SilkSheenArt />
+              </div>
             </Reveal>
             <Reveal delay={0.16}>
-              <ImagePlaceholder label="Recommended Asset" caption="Construction / stitch detail" />
+              <div className="aspect-[4/5]">
+                <StitchDetailArt />
+              </div>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* STANDARDS */}
       <section className="mx-auto max-w-5xl px-6 py-28 text-center lg:px-10">
         <Reveal>
-          <SectionLabel>Words From The Few</SectionLabel>
+          <SectionLabel>What We Stand For</SectionLabel>
         </Reveal>
         <div className="mt-10 grid grid-cols-1 gap-12 md:grid-cols-3">
           {[
-            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
-            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
-            { q: "[Placeholder — real customer testimonial to come]", a: "— [Customer Name]" },
+            { q: "No seasonal drops. No logos chasing a trend cycle. One piece, refined.", a: "ON PRODUCT" },
+            { q: "22-momme Mulberry silk in the hood — not a marketing line, a material spec.", a: "ON MATERIALS" },
+            { q: "Made in small batches. When a run sells out, it doesn't come back the same way twice.", a: "ON SCALE" },
           ].map((t, i) => (
             <Reveal key={t.a} delay={i * 0.08}>
               <p className="font-serif text-lg leading-relaxed text-ink">"{t.q}"</p>

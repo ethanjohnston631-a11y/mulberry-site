@@ -16,9 +16,9 @@ export default function PrivacyPolicyPage() {
         <Reveal delay={0.05}>
           <div className="mt-10 space-y-8 text-sm leading-relaxed text-stone">
             <p>
-              This is placeholder policy content for Mulberry Empire ("Mulberry," "we," "us"). It outlines, in
-              general terms, how we intend to handle customer information. Replace this section with your
-              finalized privacy policy, ideally reviewed by counsel, before launch.
+              Mulberry Empire ("Mulberry," "we," "us") respects your privacy. This policy outlines how we
+              collect, use, and protect the information you share with us when you visit this site, sign up
+              for the Dispatch, or place an order.
             </p>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Information We Collect</h2>

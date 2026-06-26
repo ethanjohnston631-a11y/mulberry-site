@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import { SilkSheenArt } from "@/components/TextureArt";
+import MommeDiagram from "@/components/MommeDiagram";
 
 export const metadata = { title: "Why Silk — Mulberry" };
 
@@ -36,13 +37,10 @@ export default function WhySilkPage() {
   return (
     <main className="bg-ivory">
       <section className="relative flex h-[60vh] min-h-[420px] items-end overflow-hidden bg-ink text-bone">
-        <ImagePlaceholder
-          label="Recommended Asset"
-          caption="Macro silk filament photography"
-          tone="gold"
-          fill
-          showMark={false}
-        />
+        <div className="absolute inset-0 h-full w-full opacity-50">
+          <SilkSheenArt />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/40" />
         <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-16 lg:px-10">
           <p className="mb-4 text-[11px] uppercase tracking-widest3 text-gold-light">Why Silk</p>
           <h1 className="font-serif text-4xl font-normal leading-tight md:text-6xl">
@@ -91,7 +89,9 @@ export default function WhySilkPage() {
               </p>
             </Reveal>
             <Reveal delay={0.08}>
-              <ImagePlaceholder label="Recommended Asset" caption="Diagram — silk momme grading / fiber comparison" tone="gold" />
+              <div className="aspect-[4/5]">
+                <MommeDiagram />
+              </div>
             </Reveal>
           </div>
         </div>

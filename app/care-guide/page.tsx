@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import CareIcon from "@/components/CareIcon";
 
 export const metadata = { title: "Care Guide — Mulberry" };
 
@@ -8,26 +8,31 @@ const STEPS = [
   {
     n: "01",
     t: "Washing",
+    icon: "washing" as const,
     c: "Turn inside out before washing to protect the silk lining and outer color. Machine wash cold on a gentle cycle with like colors. Avoid bleach and fabric softener — both degrade silk fibers over time.",
   },
   {
     n: "02",
     t: "Drying",
+    icon: "drying" as const,
     c: "Lay flat to dry, away from direct sunlight and heat. Tumble drying breaks down the fleece loft and can damage the silk lining permanently. Patience here adds years to the garment.",
   },
   {
     n: "03",
     t: "Storage",
+    icon: "storage" as const,
     c: "Fold rather than hang to preserve the boxy shoulder line. Store in a cool, dry place. A breathable cotton garment bag is ideal for extended storage between seasons.",
   },
   {
     n: "04",
     t: "Maintenance",
+    icon: "maintenance" as const,
     c: "Pill removal: use a fabric shaver sparingly on the fleece exterior only — never on the silk lining. Spot-clean small stains immediately with cold water before they set.",
   },
   {
     n: "05",
     t: "Longevity",
+    icon: "longevity" as const,
     c: "Treat it the way you'd treat anything meant to last: wear it, wash it correctly, and let it earn its character. A well-kept Sovereign should outlast a decade of regular wear.",
   },
 ];
@@ -54,7 +59,9 @@ export default function CareGuidePage() {
                   <h3 className="text-sm uppercase tracking-widest2 text-ink">{s.t}</h3>
                   <p className="mt-3 max-w-md text-sm leading-relaxed text-stone">{s.c}</p>
                 </div>
-                <ImagePlaceholder label="Recommended Asset" caption={`Visual instruction — ${s.t.toLowerCase()}`} aspect="aspect-[4/3]" />
+                <div className="aspect-[4/3]">
+                  <CareIcon type={s.icon} />
+                </div>
               </div>
               {i < STEPS.length - 1 && <div className="mt-14 hairline" />}
             </Reveal>

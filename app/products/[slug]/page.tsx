@@ -3,8 +3,9 @@ import { getProduct, PRODUCTS } from "@/lib/products";
 import ProductExperience from "@/components/ProductExperience";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 import SilkLiningDiagram from "@/components/SilkLiningDiagram";
+import { FleeceWeaveArt } from "@/components/TextureArt";
+import EditorialQuote from "@/components/EditorialQuote";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -25,7 +26,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <Reveal>
-            <ImagePlaceholder label="Recommended Asset" caption="Lifestyle — worn, in motion" tone="bone" aspect="aspect-[3/4]" />
+            <div className="aspect-[3/4]">
+              <EditorialQuote quote="Cut oversized. Worn daily. Built to take the wear and look better for it." />
+            </div>
           </Reveal>
           <Reveal delay={0.06}>
             <div className="aspect-[3/4]">
@@ -33,7 +36,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
           </Reveal>
           <Reveal delay={0.12}>
-            <ImagePlaceholder label="Recommended Asset" caption="Lifestyle — studio detail" tone="bone" aspect="aspect-[3/4]" />
+            <div className="aspect-[3/4]">
+              <EditorialQuote quote="Every wash is hand-distressed. No two runs come out quite the same." attribution="Small-Batch Finishing" />
+            </div>
           </Reveal>
         </div>
       </section>
@@ -62,7 +67,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <ImagePlaceholder label="Recommended Asset" caption="Close-up fabric photography — washed fleece weave" />
+            <div className="aspect-[4/5]">
+              <FleeceWeaveArt />
+            </div>
           </Reveal>
           <Reveal delay={0.08}>
             <SectionLabel>Material Story</SectionLabel>

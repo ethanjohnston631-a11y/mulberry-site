@@ -16,8 +16,8 @@ export default function TermsPage() {
         <Reveal delay={0.05}>
           <div className="mt-10 space-y-8 text-sm leading-relaxed text-stone">
             <p>
-              This is placeholder terms content for Mulberry Empire ("Mulberry"). Replace with finalized
-              terms, ideally reviewed by counsel, before launch.
+              These terms govern your use of this site and any order placed with Mulberry Empire
+              ("Mulberry"). By placing an order, you agree to the terms below.
             </p>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Orders & Payment</h2>
@@ -36,7 +36,10 @@ export default function TermsPage() {
             </div>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Returns</h2>
-              <p>See our Care Guide and Contact page for current return and exchange windows.</p>
+              <p>
+                Unworn items in original condition may be returned within 30 days of delivery. Contact{" "}
+                info@mulberryempire.com to start a return.
+              </p>
             </div>
           </div>
         </Reveal>

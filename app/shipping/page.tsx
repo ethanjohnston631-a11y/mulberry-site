@@ -14,18 +14,17 @@ export default function ShippingPage() {
 
         <Reveal delay={0.05}>
           <div className="mt-10 space-y-8 text-sm leading-relaxed text-stone">
-            <p>This is placeholder shipping content. Replace with your finalized rates and timelines.</p>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Where We Ship</h2>
               <p>Currently the United States, Canada, the United Kingdom, and Australia.</p>
             </div>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Processing Time</h2>
-              <p>Orders are processed within [X] business days before shipment.</p>
+              <p>Orders are processed within 2–3 business days before shipment.</p>
             </div>
             <div>
               <h2 className="mb-2 text-sm uppercase tracking-widest2 text-ink">Delivery Estimates</h2>
-              <p>Domestic: [X–X] business days. International: [X–X] business days. Rates calculated at checkout.</p>
+              <p>Domestic: 4–7 business days. International: 7–14 business days. Rates calculated at checkout.</p>
             </div>
           </div>
         </Reveal>
