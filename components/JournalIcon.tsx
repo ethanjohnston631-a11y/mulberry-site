@@ -1,4 +1,6 @@
-const ICONS: Record<string, JSX.Element> = {
+import type { ReactElement } from "react";
+
+const ICONS: Record<string, ReactElement> = {
   wardrobe: (
     <g fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M30 20 L30 60 M50 20 L50 60" />

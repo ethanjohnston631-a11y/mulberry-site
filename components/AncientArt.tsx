@@ -1,10 +1,12 @@
+import type { ReactNode } from "react";
+
 type ArtProps = { className?: string };
 
 const STROKE = "#0b0b0c";
 const GOLD = "#a9824f";
 const PARCH = "#ece3d0";
 
-function Frame({ children }: { children: React.ReactNode }) {
+function Frame({ children }: { children: ReactNode }) {
   return (
     <div className="relative h-full w-full" style={{ backgroundColor: PARCH }}>
       <div

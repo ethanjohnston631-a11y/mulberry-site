@@ -1,4 +1,6 @@
-const ICONS: Record<string, JSX.Element> = {
+import type { ReactElement } from "react";
+
+const ICONS: Record<string, ReactElement> = {
   washing: (
     <g fill="none" stroke="currentColor" strokeWidth="2">
       <rect x="20" y="14" width="40" height="48" rx="4" />
