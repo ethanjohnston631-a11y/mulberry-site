@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 
-export const metadata = { title: "Shipping — Mulberry" };
+export const metadata = { title: "Shipping" };
 
 export default function ShippingPage() {
   return (

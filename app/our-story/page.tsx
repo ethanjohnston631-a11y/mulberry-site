@@ -3,7 +3,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 
-export const metadata = { title: "Our Story — Mulberry" };
+export const metadata = { title: "Our Story" };
 
 export default function OurStoryPage() {
   return (

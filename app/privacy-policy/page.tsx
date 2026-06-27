@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 
-export const metadata = { title: "Privacy Policy — Mulberry" };
+export const metadata = { title: "Privacy Policy" };
 
 export default function PrivacyPolicyPage() {
   return (

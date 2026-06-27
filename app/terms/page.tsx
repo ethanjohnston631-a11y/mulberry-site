@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 
-export const metadata = { title: "Terms of Service — Mulberry" };
+export const metadata = { title: "Terms of Service" };
 
 export default function TermsPage() {
   return (

@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import CareIcon from "@/components/CareIcon";
 
-export const metadata = { title: "Care Guide — Mulberry" };
+export const metadata = { title: "Care Guide" };
 
 const STEPS = [
   {

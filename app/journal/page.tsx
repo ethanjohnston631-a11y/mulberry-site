@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import JournalIcon from "@/components/JournalIcon";
 
-export const metadata = { title: "Journal — Mulberry" };
+export const metadata = { title: "Journal" };
 
 const POSTS = [
   { t: "On Building a Wardrobe That Respects Your Time", c: "Why fewer, better pieces compound the way good habits do.", icon: "wardrobe" as const },

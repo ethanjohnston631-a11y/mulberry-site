@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import { SilkRoadMapArt, SericultureArt, RoyalSilkArt, CaravanArt } from "@/components/AncientArt";
 
-export const metadata = { title: "The History of Mulberry Silk — Mulberry" };
+export const metadata = { title: "The History of Mulberry Silk" };
 
 const TIMELINE = [
   {

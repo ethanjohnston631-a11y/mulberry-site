@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const metadata = { title: "Checkout Canceled", robots: { index: false } };
+
 export default function CancelPage() {
   return (
     <main className="mx-auto flex min-h-[70vh] max-w-xl flex-col items-center justify-center bg-ivory px-6 text-center">

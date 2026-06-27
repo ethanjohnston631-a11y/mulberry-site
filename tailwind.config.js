@@ -8,8 +8,8 @@ module.exports = {
         charcoal: "#191816",
         bone: "#f4efe6",
         ivory: "#faf7f1",
-        stone: "#8a8378",
-        gold: "#a9824f",
+        stone: "#655f53",
+        gold: "#876435",
         "gold-light": "#cdab78",
       },
       fontFamily: {
@@ -21,7 +21,7 @@ module.exports = {
         widest3: "0.32em",
       },
       backgroundImage: {
-        "gold-line": "linear-gradient(90deg, transparent, #a9824f, transparent)",
+        "gold-line": "linear-gradient(90deg, transparent, #876435, transparent)",
       },
     },
   },

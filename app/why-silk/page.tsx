@@ -4,7 +4,7 @@ import SectionLabel from "@/components/SectionLabel";
 import { SilkSheenArt } from "@/components/TextureArt";
 import MommeDiagram from "@/components/MommeDiagram";
 
-export const metadata = { title: "Why Silk — Mulberry" };
+export const metadata = { title: "Why Silk" };
 
 const BENEFITS = [
   {
