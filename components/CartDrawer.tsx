@@ -8,19 +8,39 @@ import { useCart } from "@/lib/cart-context";
 export default function CartDrawer() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, subtotal } = useCart();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   async function checkout() {
     setLoading(true);
+    setError(null);
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30_000);
+
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items }),
+        signal: controller.signal,
       });
+
       const data = await res.json();
-      if (data.url) window.location.href = data.url;
-    } finally {
+
+      if (data.url) {
+        // Stay in loading state while browser navigates to Stripe
+        window.location.href = data.url;
+        return;
+      }
+
+      setError(data.error ?? "Checkout failed. Please try again.");
       setLoading(false);
+    } catch (err) {
+      const isTimeout = err instanceof Error && err.name === "AbortError";
+      setError(isTimeout ? "Request timed out. Please try again." : "Could not reach checkout. Please try again.");
+      setLoading(false);
+    } finally {
+      clearTimeout(timeout);
     }
   }
 
@@ -103,12 +123,15 @@ export default function CartDrawer() {
                   <span>Subtotal</span>
                   <span>${subtotal.toFixed(2)}</span>
                 </div>
+                {error && (
+                  <p className="mb-3 text-xs text-red-600">{error}</p>
+                )}
                 <button
                   onClick={checkout}
                   disabled={loading}
                   className="w-full bg-ink py-4 text-sm uppercase tracking-widest2 text-bone transition hover:bg-gold disabled:opacity-50"
                 >
-                  {loading ? "Redirecting…" : "Checkout"}
+                  {loading ? "Redirecting to Checkout…" : "Checkout"}
                 </button>
               </div>
             )}

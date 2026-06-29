@@ -87,9 +87,7 @@ export default function WhySilkPage() {
               </p>
             </Reveal>
             <Reveal delay={0.08}>
-              <div className="aspect-[4/5]">
-                <MommeDiagram />
-              </div>
+              <MommeDiagram />
             </Reveal>
           </div>
         </div>

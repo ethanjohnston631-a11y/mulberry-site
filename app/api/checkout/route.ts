@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "");
-
 type IncomingItem = {
   name: string;
   price: number;
@@ -13,16 +11,24 @@ type IncomingItem = {
 };
 
 export async function POST(req: NextRequest) {
-  if (!process.env.STRIPE_SECRET_KEY) {
-    return NextResponse.json({ error: "Stripe is not configured." }, { status: 500 });
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) {
+    return NextResponse.json({ error: "Checkout is not available right now." }, { status: 503 });
   }
 
-  const { items } = (await req.json()) as { items: IncomingItem[] };
+  let items: IncomingItem[];
+  try {
+    const body = await req.json();
+    items = body.items;
+  } catch {
+    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+  }
 
   if (!items || items.length === 0) {
     return NextResponse.json({ error: "Cart is empty." }, { status: 400 });
   }
 
+  const stripe = new Stripe(key);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? req.nextUrl.origin;
 
   const line_items = items.map((item) => ({
@@ -37,13 +43,19 @@ export async function POST(req: NextRequest) {
     quantity: item.quantity,
   }));
 
-  const session = await stripe.checkout.sessions.create({
-    mode: "payment",
-    line_items,
-    success_url: `${siteUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${siteUrl}/cancel`,
-    shipping_address_collection: { allowed_countries: ["US", "CA", "GB", "AU"] },
-  });
+  try {
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items,
+      success_url: `${siteUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${siteUrl}/cancel`,
+      shipping_address_collection: { allowed_countries: ["US", "CA", "GB", "AU"] },
+    });
 
-  return NextResponse.json({ url: session.url });
+    return NextResponse.json({ url: session.url });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "Checkout session failed.";
+    console.error("[checkout]", message);
+    return NextResponse.json({ error: "Could not create checkout session." }, { status: 500 });
+  }
 }

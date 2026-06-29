@@ -4,28 +4,43 @@ const GRADES = [
   { momme: 16, label: "Mid-weight" },
   { momme: 19, label: "Premium" },
   { momme: 22, label: "Mulberry Empire", highlight: true },
-  { momme: 25, label: "Heaviest" },
+  { momme: 25, label: "Heaviest grade" },
 ];
 
+const MAX = 25;
+
 export default function MommeDiagram({ className = "" }: { className?: string }) {
-  const max = 25;
   return (
-    <div className={`relative h-full w-full bg-[#1c1814] px-8 py-8 text-bone ${className}`}>
-      <p className="text-[10px] uppercase tracking-widest2 text-gold-light">Silk Weight Comparison</p>
-      <div className="mt-6 flex h-[65%] items-end gap-4">
+    <div className={className}>
+      <p className="mb-6 text-[10px] uppercase tracking-widest2 text-gold-light">Silk Weight Index</p>
+      <div className="divide-y divide-bone/10">
         {GRADES.map((g) => (
-          <div key={g.momme} className="flex flex-1 flex-col items-center gap-2">
-            <div
-              className={`w-full rounded-t-sm ${g.highlight ? "bg-gold-light" : "bg-bone/25"}`}
-              style={{ height: `${(g.momme / max) * 100}%` }}
-            />
-            <p className={`text-[10px] ${g.highlight ? "text-gold-light" : "text-bone/50"}`}>{g.momme}mm</p>
+          <div key={g.momme} className="flex items-center gap-5 py-3.5">
+            <span
+              className={`w-32 shrink-0 text-[10px] uppercase tracking-widest2 ${
+                g.highlight ? "text-gold-light" : "text-bone/35"
+              }`}
+            >
+              {g.label}
+            </span>
+            <div className="flex flex-1 items-center gap-3">
+              <div
+                className={`h-px flex-none ${g.highlight ? "bg-gold-light" : "bg-bone/20"}`}
+                style={{ width: `${(g.momme / MAX) * 100}%` }}
+              />
+              <span
+                className={`shrink-0 tabular-nums text-[11px] ${
+                  g.highlight ? "text-gold-light" : "text-bone/30"
+                }`}
+              >
+                {g.momme}mm
+              </span>
+            </div>
           </div>
         ))}
       </div>
-      <p className="mt-4 text-xs text-bone/50">
-        Momme measures silk density — higher means heavier, more durable, more refined. We line every hood
-        in 22-momme.
+      <p className="mt-6 text-xs leading-relaxed text-bone/40">
+        Higher momme = denser, more durable silk. 22-momme is the grade used in heirloom bedding — and now lining every Sovereign hood.
       </p>
     </div>
   );
