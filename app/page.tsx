@@ -4,7 +4,6 @@ import { PRODUCTS } from "@/lib/products";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import { SilkRoadMapArt } from "@/components/AncientArt";
-import { FleeceWeaveArt, SilkSheenArt, StitchDetailArt } from "@/components/TextureArt";
 import Marquee from "@/components/Marquee";
 
 export default function Home() {
@@ -14,6 +13,7 @@ export default function Home() {
     <main className="bg-ivory">
       {/* HERO */}
       <section className="relative flex h-[100vh] min-h-[640px] items-end overflow-hidden bg-ink">
+        <Image src="/hero-homepage.jpg" alt="" fill priority className="object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/10" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 text-bone lg:px-10">
           <p className="mb-5 text-[11px] uppercase tracking-widest3 text-gold-light">Empire of Silk</p>
@@ -163,18 +163,18 @@ export default function Home() {
           </Reveal>
           <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
             <Reveal>
-              <div className="aspect-[4/5]">
-                <FleeceWeaveArt />
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image src="/textures/texture-fleece-weave.jpg" alt="Washed cotton fleece" fill className="object-cover" />
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <div className="aspect-[4/5]">
-                <SilkSheenArt />
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image src="/textures/texture-silk-sheen.jpg" alt="22-momme Mulberry silk" fill className="object-cover" />
               </div>
             </Reveal>
             <Reveal delay={0.16}>
-              <div className="aspect-[4/5]">
-                <StitchDetailArt />
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image src="/textures/texture-stitch-detail.jpg" alt="Double-needle construction" fill className="object-cover" />
               </div>
             </Reveal>
           </div>

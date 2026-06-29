@@ -1,13 +1,25 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import JournalIcon from "@/components/JournalIcon";
 
 export const metadata = { title: "Journal" };
 
 const POSTS = [
-  { t: "On Building a Wardrobe That Respects Your Time", c: "Why fewer, better pieces compound the way good habits do.", icon: "wardrobe" as const },
-  { t: "Inside the Momme: How Silk Quality Is Actually Graded", c: "A closer look at the number that separates luxury silk from everything else.", icon: "momme" as const },
-  { t: "Discipline Is a Material Choice", c: "What the clothes you choose say about the standards you keep.", icon: "discipline" as const },
+  {
+    t: "On Building a Wardrobe That Respects Your Time",
+    c: "Why fewer, better pieces compound the way good habits do.",
+    img: "/journal/journal-wardrobe.jpg",
+  },
+  {
+    t: "Inside the Momme: How Silk Quality Is Actually Graded",
+    c: "A closer look at the number that separates luxury silk from everything else.",
+    img: "/journal/journal-silk-grade.jpg",
+  },
+  {
+    t: "Discipline Is a Material Choice",
+    c: "What the clothes you choose say about the standards you keep.",
+    img: "/journal/journal-discipline.jpg",
+  },
 ];
 
 export default function JournalPage() {
@@ -31,8 +43,8 @@ export default function JournalPage() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {POSTS.map((p, i) => (
             <Reveal key={p.t} delay={i * 0.06}>
-              <div className="aspect-[4/5]">
-                <JournalIcon type={p.icon} />
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image src={p.img} alt={p.t} fill className="object-cover" />
               </div>
               <h3 className="mt-5 font-serif text-xl text-ink">{p.t}</h3>
               <p className="mt-2 text-sm leading-relaxed text-stone">{p.c}</p>

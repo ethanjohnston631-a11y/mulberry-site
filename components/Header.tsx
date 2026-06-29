@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCart } from "@/lib/cart-context";
 
@@ -22,15 +21,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-ivory/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="relative block h-8 w-8 shrink-0 overflow-hidden rounded-full">
-            <Image
-              src="/logo.png"
-              alt="Mulberry"
-              fill
-              style={{ objectFit: "cover", objectPosition: "51% 36%", transform: "scale(1.8)" }}
-            />
-          </span>
+        <Link href="/" className="flex items-center">
           <span className="font-serif text-lg tracking-widest2 uppercase">Mulberry</span>
         </Link>
 

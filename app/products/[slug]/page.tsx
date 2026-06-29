@@ -5,8 +5,7 @@ import ProductExperience from "@/components/ProductExperience";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import SilkLiningDiagram from "@/components/SilkLiningDiagram";
-import { FleeceWeaveArt } from "@/components/TextureArt";
-import EditorialQuote from "@/components/EditorialQuote";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -63,8 +62,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <Reveal>
-            <div className="aspect-[3/4]">
-              <EditorialQuote quote="Cut oversized. Worn daily. Built to take the wear and look better for it." />
+            <div className="relative aspect-[3/4] overflow-hidden">
+              <Image src="/lifestyle/lifestyle-product-01.jpg" alt="The Sovereign Hoodie" fill className="object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.06}>
@@ -73,8 +72,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
           </Reveal>
           <Reveal delay={0.12}>
-            <div className="aspect-[3/4]">
-              <EditorialQuote quote="Every wash is hand-distressed. No two runs come out quite the same." attribution="Small-Batch Finishing" />
+            <div className="relative aspect-[3/4] overflow-hidden">
+              <Image src="/lifestyle/lifestyle-product-02.jpg" alt="The Sovereign Hoodie — detail" fill className="object-cover" />
             </div>
           </Reveal>
         </div>
@@ -104,8 +103,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <div className="aspect-[4/5]">
-              <FleeceWeaveArt />
+            <div className="relative aspect-[4/5] overflow-hidden">
+              <Image src="/textures/texture-fleece-weave.jpg" alt="Washed cotton fleece" fill className="object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.08}>

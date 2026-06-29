@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
-import { SilkSheenArt } from "@/components/TextureArt";
 import MommeDiagram from "@/components/MommeDiagram";
 
 export const metadata = { title: "Why Silk" };
@@ -37,9 +37,7 @@ export default function WhySilkPage() {
   return (
     <main className="bg-ivory">
       <section className="relative flex h-[60vh] min-h-[420px] items-end overflow-hidden bg-ink text-bone">
-        <div className="absolute inset-0 h-full w-full opacity-50">
-          <SilkSheenArt />
-        </div>
+        <Image src="/textures/texture-silk-sheen.jpg" alt="22-momme Mulberry silk" fill className="object-cover opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/40" />
         <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-16 lg:px-10">
           <p className="mb-4 text-[11px] uppercase tracking-widest3 text-gold-light">Why Silk</p>
