@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
-
+console.log("STRIPE KEY EXISTS:", !!process.env.STRIPE_SECRET_KEY);
+console.log("SITE URL:", process.env.NEXT_PUBLIC_SITE_URL);
 type IncomingItem = {
   name: string;
   price: number;
