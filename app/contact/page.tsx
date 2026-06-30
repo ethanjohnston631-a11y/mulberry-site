@@ -6,6 +6,8 @@ import SectionLabel from "@/components/SectionLabel";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,20 +15,28 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(false);
+    setLoading(true);
 
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
-    });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
 
-    setSent(true);
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -53,6 +63,15 @@ export default function ContactPage() {
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="mt-12 space-y-6">
+              {error && (
+                <p className="text-sm text-red-600">
+                  Something went wrong. Please try again or email us directly at{" "}
+                  <a href="mailto:info@mulberryempire.com" className="underline">
+                    info@mulberryempire.com
+                  </a>
+                  .
+                </p>
+              )}
               <div>
                 <label className="text-[11px] uppercase tracking-widest2 text-stone">
                   Name
@@ -94,9 +113,10 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="bg-ink px-9 py-4 text-[11px] uppercase tracking-widest2 text-bone transition hover:bg-gold"
+                disabled={loading}
+                className="bg-ink px-9 py-4 text-[11px] uppercase tracking-widest2 text-bone transition hover:bg-gold disabled:opacity-60"
               >
-                Send Message
+                {loading ? "Sending…" : "Send Message"}
               </button>
             </form>
           )}
