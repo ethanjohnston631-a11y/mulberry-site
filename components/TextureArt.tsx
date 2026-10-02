@@ -14,7 +14,7 @@ export function FleeceWeaveArt({ className = "" }: Props) {
         <rect width="200" height="200" fill="url(#fleece)" />
       </svg>
       <div className="absolute inset-x-0 bottom-0 p-5 text-bone/55">
-        <p className="text-[10px] uppercase tracking-widest2">Washed Cotton Fleece</p>
+        <p className="text-[10px] uppercase tracking-widest2">Washed Heavyweight Cotton</p>
         <p className="mt-1 text-xs">Heavyweight shell, hand-distressed</p>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Reveal from "@/components/Reveal";
 import SectionLabel from "@/components/SectionLabel";
 import SilkLiningDiagram from "@/components/SilkLiningDiagram";
 import Image from "next/image";
+import { CHECKOUT_OPEN, STORE_MODE } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -47,13 +48,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       url: `https://www.mulberryempire.com/products/${product.slug}`,
       priceCurrency: "USD",
       price: product.price,
-      availability: "https://schema.org/InStock",
+      availability:
+        STORE_MODE === "live"
+          ? "https://schema.org/InStock"
+          : STORE_MODE === "preorder" && CHECKOUT_OPEN
+            ? "https://schema.org/PreOrder"
+            : "https://schema.org/OutOfStock",
     },
   };
 
   return (
     <main className="bg-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <section className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
         <ProductExperience product={product} />
       </section>
@@ -85,7 +91,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <Reveal>
             <SectionLabel dark>Why It's Different</SectionLabel>
             <h2 className="max-w-xl font-serif text-3xl font-normal leading-tight md:text-4xl">
-              This is not a standard hoodie. It's engineered to be lived in.
+              This is not a standard hoodie. It&apos;s engineered to be lived in.
             </h2>
           </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -104,19 +110,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <Image src="/textures/texture-fleece-weave.jpg" alt="Washed cotton fleece" fill className="object-cover" />
+              <Image src="/textures/texture-fleece-weave.jpg" alt="Close-up of heavyweight washed cotton" fill className="object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.08}>
             <SectionLabel>Material Story</SectionLabel>
             <h2 className="font-serif text-3xl font-normal text-ink md:text-4xl">
-              Heavyweight fleece outside. 22-momme silk inside.
+              Heavyweight cotton outside. 22-momme silk inside.
             </h2>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-stone">
-              The shell is heavyweight washed cotton fleece — dense enough to hold its shape for years, soft
-              enough to wear daily. The hood is lined in 22-momme Mulberry silk, the same grade used in
-              heirloom bedding, so the surface that meets your hair and neck most is also the most refined
-              part of the garment.
+              The shell is heavyweight washed cotton, dense enough to hold its shape for years and soft
+              enough to wear daily. The hood is lined in 22-momme Mulberry silk, a weight prized in luxury
+              bedding, so the surface that meets your hair and neck most is also the most refined part of the
+              garment.
             </p>
           </Reveal>
         </div>

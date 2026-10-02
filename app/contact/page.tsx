@@ -12,6 +12,7 @@ export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [website, setWebsite] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ export default function ContactPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, website }),
       });
 
       if (res.ok) {
@@ -58,13 +59,13 @@ export default function ContactPage() {
 
         <Reveal delay={0.08}>
           {sent ? (
-            <p className="mt-12 font-serif text-xl text-ink">
-              Thank you. We'll respond within one business day.
+            <p className="mt-12 font-serif text-xl text-ink" aria-live="polite">
+              Thank you. We&apos;ll be in touch shortly.
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="mt-12 space-y-6">
               {error && (
-                <p className="text-sm text-red-600">
+                <p role="alert" className="text-sm text-red-700">
                   Something went wrong. Please try again or email us directly at{" "}
                   <a href="mailto:info@mulberryempire.com" className="underline">
                     info@mulberryempire.com
@@ -73,12 +74,15 @@ export default function ContactPage() {
                 </p>
               )}
               <div>
-                <label className="text-[11px] uppercase tracking-widest2 text-stone">
+                <label htmlFor="contact-name" className="text-[11px] uppercase tracking-widest2 text-stone">
                   Name
                 </label>
                 <input
+                  id="contact-name"
                   required
                   type="text"
+                  autoComplete="name"
+                  maxLength={120}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="mt-2 w-full border-b border-black/15 bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
@@ -86,12 +90,14 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="text-[11px] uppercase tracking-widest2 text-stone">
+                <label htmlFor="contact-email" className="text-[11px] uppercase tracking-widest2 text-stone">
                   Email
                 </label>
                 <input
+                  id="contact-email"
                   required
                   type="email"
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="mt-2 w-full border-b border-black/15 bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
@@ -99,11 +105,13 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="text-[11px] uppercase tracking-widest2 text-stone">
+                <label htmlFor="contact-message" className="text-[11px] uppercase tracking-widest2 text-stone">
                   Message
                 </label>
                 <textarea
+                  id="contact-message"
                   required
+                  maxLength={5000}
                   rows={5}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -111,6 +119,20 @@ export default function ContactPage() {
                 />
               </div>
 
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={website}
+                onChange={(e) => setWebsite(e.target.value)}
+                className="hidden"
+                aria-hidden="true"
+              />
+              <p className="text-xs text-stone">
+                We use your details only to reply to you. See our{" "}
+                <a href="/privacy-policy" className="underline underline-offset-2">Privacy Policy</a>.
+              </p>
               <button
                 type="submit"
                 disabled={loading}

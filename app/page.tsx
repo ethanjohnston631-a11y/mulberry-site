@@ -101,8 +101,8 @@ export default function Home() {
 
           <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
             {[
-              { n: "01", t: "Hair & Skin", c: "Lower friction than cotton — less breakage, less irritation, day after day." },
-              { n: "02", t: "Temperature Regulation", c: "Breathable and insulating at once. Warm when it's cold, cool when it isn't." },
+              { n: "01", t: "Hair & Skin", c: "A smoother surface than cotton, so the hood glides instead of catching, day after day." },
+              { n: "02", t: "Breathable", c: "A natural fiber that breathes and insulates, worn across every climate for millennia." },
               { n: "03", t: "Three Thousand Years", c: "The fiber that clothed emperors. Still unmatched, still rare." },
             ].map((item, i) => (
               <Reveal key={item.n} delay={0.1 + i * 0.08}>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
             <Reveal>
               <div className="relative aspect-[4/5] overflow-hidden">
-                <Image src="/textures/texture-fleece-weave.jpg" alt="Washed cotton fleece" fill className="object-cover" />
+                <Image src="/textures/texture-fleece-weave.jpg" alt="Close-up of heavyweight washed cotton" fill className="object-cover" />
               </div>
             </Reveal>
             <Reveal delay={0.08}>

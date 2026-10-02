@@ -12,7 +12,7 @@ const STEPS = [
   {
     n: "02",
     t: "Drying",
-    c: "Lay flat to dry, away from direct sunlight and heat. Tumble drying breaks down the fleece loft and can damage the silk lining permanently. Patience here adds years to the garment.",
+    c: "Lay flat to dry, away from direct sunlight and heat. Tumble drying breaks down the cotton loft and can damage the silk lining permanently. Patience here adds years to the garment.",
   },
   {
     n: "03",
@@ -22,7 +22,7 @@ const STEPS = [
   {
     n: "04",
     t: "Maintenance",
-    c: "Pill removal: use a fabric shaver sparingly on the fleece exterior only — never on the silk lining. Spot-clean small stains immediately with cold water before they set.",
+    c: "Pill removal: use a fabric shaver sparingly on the cotton exterior only — never on the silk lining. Spot-clean small stains immediately with cold water before they set.",
   },
   {
     n: "05",

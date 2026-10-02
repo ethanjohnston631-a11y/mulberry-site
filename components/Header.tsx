@@ -14,7 +14,7 @@ const EXPLORE = [
 ];
 
 export default function Header() {
-  const { count, openCart } = useCart();
+  const { count, openCart, user } = useCart();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -30,11 +30,28 @@ export default function Header() {
             Shop
           </Link>
 
-          <div className="relative" onMouseEnter={() => setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)}>
-            <button className="flex items-center gap-1.5 transition-opacity hover:opacity-60">Explore</button>
+          <div
+            className="relative"
+            onMouseEnter={() => setMenuOpen(true)}
+            onMouseLeave={() => setMenuOpen(false)}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget)) setMenuOpen(false);
+            }}
+            onKeyDown={(e) => e.key === "Escape" && setMenuOpen(false)}
+          >
+            <button
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-expanded={menuOpen}
+              aria-haspopup="true"
+              aria-controls="explore-menu"
+              className="flex items-center gap-1.5 uppercase tracking-widest2 transition-opacity hover:opacity-60"
+            >
+              Explore
+            </button>
             <AnimatePresence>
               {menuOpen && (
                 <motion.div
+                  id="explore-menu"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
@@ -45,6 +62,7 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      onClick={() => setMenuOpen(false)}
                       className="block px-5 py-3 text-left normal-case tracking-normal text-[13px] text-ink/80 transition hover:bg-bone hover:text-ink"
                     >
                       {item.label}
@@ -64,10 +82,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-5">
+          <Link
+            href="/account"
+            className="hidden text-[11px] uppercase sm:inline tracking-widest2 transition-opacity hover:opacity-60"
+            aria-label={user ? "Your account" : "Sign in"}
+          >
+            {user ? "Account" : "Sign In"}
+          </Link>
           <button
             onClick={openCart}
             className="flex items-center gap-2 text-[11px] uppercase tracking-widest2 transition-opacity hover:opacity-60"
-            aria-label="Open cart"
+            aria-label={`Open bag, ${count} ${count === 1 ? "item" : "items"}`}
           >
             Bag {count > 0 && <span className="text-gold">({count})</span>}
           </button>
@@ -75,6 +100,8 @@ export default function Header() {
             onClick={() => setMobileOpen((v) => !v)}
             className="text-[11px] uppercase tracking-widest2 md:hidden"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
           >
             Menu
           </button>
@@ -84,6 +111,7 @@ export default function Header() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -103,6 +131,9 @@ export default function Header() {
               </Link>
               <Link href="/contact" className="py-3" onClick={() => setMobileOpen(false)}>
                 Contact
+              </Link>
+              <Link href="/account" className="py-3" onClick={() => setMobileOpen(false)}>
+                {user ? "Account" : "Sign In"}
               </Link>
             </div>
           </motion.div>

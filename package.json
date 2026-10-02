@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@upstash/redis": "^1.39.0",
     "framer-motion": "^11.3.8",
     "next": "^16.2.9",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "resend": "^6.16.0",
+    "server-only": "^0.0.1",
     "stripe": "^16.2.0"
   },
   "devDependencies": {

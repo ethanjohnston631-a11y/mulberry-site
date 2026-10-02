@@ -18,31 +18,31 @@ export const PRODUCTS: Product[] = [
     tagline: "The flagship. Silk-lined. Built for the long run.",
     price: 248,
     description:
-      "Heavyweight washed fleece on the outside. Mulberry silk on the inside. The Sovereign is cut oversized and boxy, finished with a hand-distressed wash and raised metallic graphics — and lined at the hood in 22-momme Mulberry silk so the one piece that touches your skin most is also the finest.",
+      "Heavyweight washed cotton on the outside. Mulberry silk on the inside. The Sovereign is cut oversized and boxy, finished with a garment wash and raised graphic detailing, and lined at the hood in 22-momme Mulberry silk so the part that touches your hair and neck most is also the finest.",
     details: [
-      "Heavyweight washed cotton fleece shell",
+      "Heavyweight washed 100% cotton shell",
       "22-momme Mulberry silk hood lining",
       "Oversized, boxy silhouette with dropped shoulder",
-      "Hand-distressed wash, raised metallic graphic detailing",
+      "Garment-washed finish with raised graphic detailing",
       "Embroidered silkworm mark on the chest",
       "Reinforced kangaroo pocket",
     ],
     benefits: [
       {
-        title: "Hair Protection",
-        copy: "Mulberry silk's smooth filament reduces friction against hair and skin compared to cotton — less breakage, less tugging, less static, night or day.",
+        title: "Less Friction",
+        copy: "Mulberry silk's long, smooth filament has a far slicker surface than cotton, so the hood glides over hair and skin instead of catching and tugging.",
       },
       {
-        title: "Skin Comfort",
-        copy: "Silk holds less moisture and bacteria than cotton against the skin, and its natural proteins are gentler on sensitive skin around the neck and face.",
+        title: "Softness Where It Counts",
+        copy: "The hood is the part of a hoodie that sits against your neck and face. Lining it in silk means the surface you feel most is also the softest.",
       },
       {
-        title: "Temperature Regulation",
-        copy: "Silk breathes and insulates at once — warmer when you need it, cooler when you don't. The fleece shell does the heavy lifting; the lining does the rest.",
+        title: "Breathable Natural Fiber",
+        copy: "Silk is a breathable natural protein fiber with light insulating qualities. The heavyweight cotton shell does the heavy lifting; the lining adds comfort.",
       },
       {
         title: "Made in Small Batches",
-        copy: "Each wash and graphic is applied by hand in limited runs, so no two batches are perfectly identical — and once a run sells out, it doesn't come back the same way twice.",
+        copy: "Produced in limited runs rather than continuous mass production. Garment washing gives each batch subtle variation, and when a run sells out, it doesn't come back the same way twice.",
       },
     ],
     faqs: [
@@ -52,7 +52,7 @@ export const PRODUCTS: Product[] = [
       },
       {
         q: "How should I size The Sovereign?",
-        a: "It's cut oversized and boxy by design. If you prefer a closer fit, size down. Full measurements are in the Care Guide.",
+        a: "It's cut oversized and boxy by design. If you prefer a closer fit, size down. A full measurement chart will be published with the first production run.",
       },
       {
         q: "Is the silk lining washable?",
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
       },
       {
         q: "Where is it made?",
-        a: "Cut, washed, and finished in small batches to control quality at every stage, from fleece selection to the final silk stitch.",
+        a: "We're finalizing our production partner for the first run. The country of origin will be listed on this page and on the garment's label before any order ships.",
       },
     ],
     colors: [

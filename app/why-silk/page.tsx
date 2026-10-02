@@ -8,28 +8,28 @@ export const metadata = { title: "Why Silk" };
 
 const BENEFITS = [
   {
-    t: "Hair Protection",
-    c: "Cotton fibers are rough at a microscopic level — they grip hair as you move, causing friction, frizz, and breakage over time. Mulberry silk's filament is smooth and round, letting hair glide instead of catch.",
+    t: "Glides, Doesn't Grip",
+    c: "Under a microscope, cotton is made of short, twisted fibers with a comparatively rough surface. Mulberry silk is a long, smooth continuous filament, so hair and skin glide across it instead of catching.",
   },
   {
-    t: "Skin Comfort",
-    c: "Silk contains natural proteins (sericin and fibroin) that are gentle on sensitive skin, and it holds significantly less moisture than cotton — meaning less irritation against the neck and face.",
+    t: "Natural Protein Fiber",
+    c: "Silk is built from natural proteins, chiefly fibroin. It's the reason silk feels cool, smooth and soft against the neck and face in a way plant fibers don't.",
   },
   {
     t: "Reduced Friction",
-    c: "Less friction means less pulling on hair follicles and less abrasion on skin during a full day of movement — from the gym to the office to bed.",
+    c: "A smoother surface means less friction against your hair and skin every time you pull the hood up or turn your head, from morning to night.",
   },
   {
-    t: "Moisture Retention",
-    c: "Silk helps skin retain moisture rather than absorbing it away, unlike cotton, which can leave skin drier after extended contact.",
+    t: "Lightweight Luxury",
+    c: "At 22 momme, the lining is substantial enough to last and still light enough to disappear when you wear it. You notice the feel, not the weight.",
   },
   {
     t: "Temperature Regulation",
-    c: "Silk is a natural insulator with breathable properties — it adapts to your body temperature rather than trapping heat or leaving you cold.",
+    c: "Silk is breathable and naturally insulating, which is why it has been worn in both warm and cold climates for thousands of years.",
   },
   {
     t: "Durability",
-    c: "Despite its delicate feel, silk is one of the strongest natural fibers by tensile strength, and Mulberry silk — produced exclusively from silkworms fed on mulberry leaves — is the strongest, finest grade available.",
+    c: "Despite its delicate feel, silk is one of the strongest natural fibers for its weight. Mulberry silk, from silkworms raised on mulberry leaves, is widely regarded as the finest grade of silk.",
   },
 ];
 
