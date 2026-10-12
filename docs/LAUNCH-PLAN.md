@@ -45,15 +45,28 @@ The site is currently in **waitlist mode**, which means no sales, and that keeps
 - Result: a real Sovereign you can wear-test, wash-test and **photograph**. Prompt P-01 in
   `docs/IMAGE-PROMPTS.md` shows the shot to recreate for real.
 
-## Step 3: Get factory quotes (weeks 1–6; drafts are ready in Gmail)
-Four drafts are waiting in Gmail. Each needs the tech pack PDF attached before you send it:
+## Step 3: Get factory quotes (in progress; inquiries sent 12 Oct 2026)
+All inquiries link to the tech pack Google Doc (`1UPHHLMMUPC9zv4358Iwdi3xCs-QWpfbdEbFkjRxNHGM`). It's shared
+view-only with the Portugal and US factories; the China factories received the specs in the email body.
 
-| Factory | Where | Minimum (their published figure) | Status |
+| Factory | Where | Minimum (published) | Status |
 |---|---|---|---|
-| ASBX | Barcelos, PT | 100 per design, or 50 with a surcharge | Replied Aug 6. Reply drafted |
-| Create Fashion Brand | Barcelos, PT | 150 from scratch, or 50 on customised blanks | Replied Aug 12. Reply drafted |
-| White Cotton | Barcelos, PT | 50 per style | First inquiry drafted |
-| Labwear Studios | Portugal | 50 per style | First inquiry drafted |
+| ASBX | Barcelos, PT | 100, or 50 with a surcharge | Reply sent in thread, 12 Oct |
+| Create Fashion Brand | Barcelos, PT | 150 cut & sew; 50 custom blanks; 1-pc blanks and Sample Room | Reply sent; auto-ack, 24–72h review |
+| White Cotton | Barcelos, PT | 50 per style | Inquiry sent 12 Oct |
+| Labwear Studios | Portugal | 50 per style | Inquiry sent 12 Oct |
+| Plucky Reach | Los Angeles | from 50; hood lining listed | Asked for written ballpark before a discovery call |
+| Full Speed 100 | Los Angeles | 50–100 basic hoodies | Inquiry sent 12 Oct (blank-mod + cut & sew) |
+| Groovecolor | Dongguan, CN | 50–100 per color; makes satin-lined hoodies | Inquiry sent 12 Oct (silk + satin quote) |
+| INNBLAC | Zhejiang, CN | n/a; satin-lined specialist | Inquiry sent 12 Oct |
+| DOCSUN | Guangzhou, CN | n/a; mulberry silk OEM | Asked to make the hoodie or supply silk panels |
+| BOMME Studio | n/a | n/a | Follow-up sent 12 Oct |
+| Taha Group | n/a | n/a | Bounced (inbox full), dropped |
+
+**Fastest route to wearable hoodies:** a premium blank (Los Angeles Apparel HF09 garment dye, 14 oz, about
+$50 in bulk) plus the silk hood lining and embroidery added by an LA contractor. The real silk adds only about
+$5–12 per piece (22-momme charmeuse is about $11–25 a yard, about half a yard per hood). Skip Comfort Colors
+1567: at 9.5 oz with 20% polyester, it's too light for a $248 piece.
 
 Choose on: **silk competence** (can they show linings?), communication speed, sample cost, and payment terms.
 ASBX leads today on responsiveness and fit.
