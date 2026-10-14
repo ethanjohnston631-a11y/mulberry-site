@@ -38,6 +38,8 @@ const nextConfig = {
     return [
       { source: "/:path*", headers: securityHeaders },
       { source: "/api/:path*", headers: [{ key: "Cache-Control", value: "no-store" }] },
+      // Unlisted files shared with manufacturers: never indexed by search engines.
+      { source: "/files/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }] },
     ];
   },
 };

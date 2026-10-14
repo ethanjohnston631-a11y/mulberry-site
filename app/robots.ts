@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/success", "/cancel", "/account"],
+      disallow: ["/api/", "/success", "/cancel", "/account", "/files/"],
     },
     sitemap: "https://www.mulberryempire.com/sitemap.xml",
   };
