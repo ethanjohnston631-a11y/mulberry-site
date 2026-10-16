@@ -4,11 +4,11 @@ Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all pa
 Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 16 Oct 2026, 16:15 UTC)
+## Status board (updated 16 Oct 2026, 18:15 UTC)
 
 | Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
 |---|---|---|---|---|---|---|---|---|
-| Full Speed 100 (LA) | hq@fullspeed100.com (Sam) | Budget range sent 16 Oct (dev $500–1,000 / run $3–5k); booked until Dec 1 | – | – | – | 50–100 | – | – |
+| Full Speed 100 (LA) | hq@fullspeed100.com (Sam) | **Parked until December**; told them we'll reach out Dec 1 | – | – | – | 50–100 | – | – |
 | Groovecolor (CN) | info@groovecolor.com (Sunny) | Has PDF; offered client silk 16 Oct | – | – | – | 50–100 | Understood spec | – |
 | New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | Declined over silk qty; offered client silk 16 Oct | – | – | – | 100 | – | – |
 | ASBX (PT) | sales@asbx.pt (Maria) | Followed up 16 Oct | – | – | – | 100 (50 w/ surcharge) | – | – |
@@ -29,6 +29,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 - Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
 
 ## Log (newest first)
+- 16 Oct 18:15 UTC: Full Speed 100 asked us to come back in December; acknowledged (follow up Dec 1). Awaiting Might Atelier answers.
 - 16 Oct 16:15 UTC: Might Atelier quoted (first real quote). Replied with clarifying questions; no commitment made.
 - 16 Oct 14:15 UTC: No new replies. Added Might Atelier and Custom Clothing Turkey (Istanbul); 0 factories quoting so far.
 - 16 Oct 12:00 UTC: Sent 8 follow-ups (incl. Full Speed 100 budget range, client-silk offer); first inquiries to GYMHUR and Mughal.
