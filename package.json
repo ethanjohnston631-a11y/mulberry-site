@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "@upstash/redis": "^1.39.0",
@@ -20,7 +21,7 @@
     "stripe": "^16.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.10",
+    "@types/node": "^22.20.5",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.19",
@@ -28,7 +29,7 @@
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
     "typescript": "^5.5.3",
-    "vitest": "^3.2.7"
+    "vitest": "^5.0.5"
   },
   "description": "Premium luxury-brand e-commerce site for The Sovereign Hoodie — a flagship hoodie lined in Mulberry silk. Next.js App Router, Tailwind, Framer Motion, Stripe Checkout.",
   "main": "next.config.js",

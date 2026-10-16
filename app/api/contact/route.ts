@@ -15,7 +15,8 @@ export async function POST(req: NextRequest) {
   const name = typeof body?.name === "string" ? body.name.trim().slice(0, 120) : "";
   const email = normalizeEmail(body?.email);
   const message = typeof body?.message === "string" ? body.message.trim().slice(0, 5000) : "";
-  if (!name || !email || !message) return jsonError("Please fill in every field.", 400);
+  if (!name || !message) return jsonError("Please fill in every field.", 400);
+  if (!email) return jsonError("Please enter a valid email address.", 400);
 
   const ok = await sendMail({
     to: BUSINESS.email,
