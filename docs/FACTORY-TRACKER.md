@@ -4,7 +4,7 @@ Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all pa
 Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 17 Oct 2026, 18:15 UTC)
+## Status board (updated 17 Oct 2026, 20:15 UTC)
 
 | Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
 |---|---|---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 | GYMHUR (PK) | info@gymhur.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
 | Mughal Apparel (PK) | info@mughalapparel.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
 | **Might Atelier (TR)** ⭐ | info@mightatelier.com (Furkan Saltık) | **QUOTED 16 Oct.** Confirmed spec + silk sequence; can source 22-momme silk. Asked: silk in sample fee?, mould/setup est., sample shipping, 50-pc option, payment method, photos | €250 (+ mould/setup TBC) | 3–4 wks + 3–5 days express | €72–85 @75 (their silk) / €64–76 (our silk); €64–75 @150 | 75 | Yes (sources it) | Sample upfront; bulk 50/50; bulk 4–6 wks after PP |
-| Nr Moda (TR, Istanbul) | banu@nrmoda.com (Banu) | First inquiry 17 Oct (email from Fibre2Fashion listing) | – | – | – | – | – | – |
+| Nr Moda (TR, Istanbul) | banu@nrmoda.com (Banu) | Dead (address bounced: 550 no such user) | | | | | | |
 | Custom Clothing Turkey (TR) | info@customclothingturkey.com | First inquiry 16 Oct | – | – | – | 100 | – | – |
 | BOMME Studio (LA) | hello@bommestudio.com | Silent; no one-off samples | – | – | – | – | – | – |
 | Taha Group | info@tahagroup.com | Dead (bounced) | | | | | | |
@@ -30,6 +30,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 - Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
 
 ## Log (newest first)
+- 17 Oct 20:15 UTC: Nr Moda inquiry bounced (listing email invalid); marked Dead. Still only Might Atelier quoting.
 - 17 Oct 18:15 UTC: No replies. Only Might Atelier quoting, so searched for new low-MOQ factories; contacted Nr Moda (Istanbul). Other leads (Indie Source, Lefty Production, Inizio, IMPAQQT) skipped: no verifiable email or MOQ too high.
 - 17 Oct 04:15 UTC: New Asia replied with construction concerns (re-sewing hood after garment wash) and suggested a shell-fabric lining. Declined that; explained the drop-in silk lining sequence (no unpicking) and asked whether pre-washed fabric for the sample would help.
 - 16 Oct 18:15 UTC: Full Speed 100 asked us to come back in December; acknowledged (follow up Dec 1). Awaiting Might Atelier answers.
