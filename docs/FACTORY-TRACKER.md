@@ -4,13 +4,13 @@ Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all pa
 Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 16 Oct 2026, 18:15 UTC)
+## Status board (updated 17 Oct 2026, 04:15 UTC)
 
 | Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
 |---|---|---|---|---|---|---|---|---|
 | Full Speed 100 (LA) | hq@fullspeed100.com (Sam) | **Parked until December**; told them we'll reach out Dec 1 | – | – | – | 50–100 | – | – |
 | Groovecolor (CN) | info@groovecolor.com (Sunny) | Has PDF; offered client silk 16 Oct | – | – | – | 50–100 | Understood spec | – |
-| New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | Declined over silk qty; offered client silk 16 Oct | – | – | – | 100 | – | – |
+| New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | Re-engaged 17 Oct: worried about unpicking hood after wash, proposed shell-fabric lining (refused). Sent drop-in lining sequence + pre-washed fabric option | – | – | – | 100 | – | – |
 | ASBX (PT) | sales@asbx.pt (Maria) | Followed up 16 Oct | – | – | – | 100 (50 w/ surcharge) | – | – |
 | Create Fashion Brand (PT) | hello@createfashionbrand.com | Auto-ack only; 1-pc Sample Room exists | – | – | – | 150 / 50 custom blanks | – | – |
 | White Cotton (PT) | comercial@whitecotton.pt | Followed up 16 Oct | – | – | – | 50 | – | – |
@@ -29,6 +29,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 - Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
 
 ## Log (newest first)
+- 17 Oct 04:15 UTC: New Asia replied with construction concerns (re-sewing hood after garment wash) and suggested a shell-fabric lining. Declined that; explained the drop-in silk lining sequence (no unpicking) and asked whether pre-washed fabric for the sample would help.
 - 16 Oct 18:15 UTC: Full Speed 100 asked us to come back in December; acknowledged (follow up Dec 1). Awaiting Might Atelier answers.
 - 16 Oct 16:15 UTC: Might Atelier quoted (first real quote). Replied with clarifying questions; no commitment made.
 - 16 Oct 14:15 UTC: No new replies. Added Might Atelier and Custom Clothing Turkey (Istanbul); 0 factories quoting so far.
