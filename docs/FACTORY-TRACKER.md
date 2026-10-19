@@ -4,7 +4,7 @@ Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all pa
 Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 19 Oct 2026, 02:15 UTC)
+## Status board (updated 19 Oct 2026, 06:15 UTC)
 
 | Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
 |---|---|---|---|---|---|---|---|---|
@@ -15,7 +15,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 | Create Fashion Brand (PT) | hello@createfashionbrand.com | Auto-ack only; 1-pc Sample Room exists | – | – | – | 150 / 50 custom blanks | – | – |
 | White Cotton (PT) | comercial@whitecotton.pt | Followed up 16 Oct | – | – | – | 50 | – | – |
 | Labwear Studios (PT) | info@labwearstudios.com | Followed up 16 Oct | – | – | – | 50 | – | – |
-| Plucky Reach (LA) | hello@pluckyreach.com | Followed up 16 Oct; wants discovery call | – | – | – | 50 | – | – |
+| Plucky Reach (LA) | hello@pluckyreach.com | **Says they can do it (19 Oct)**; asked for phone. Kept on email, asked for written sample cost, unit @50, MOQ, silk method, terms | – | – | – | 50 | – | – |
 | DOCSUN (CN, silk) | vip@docsunhomeandliving.com | Asked silk price/m 16 Oct | – | – | – | – | Silk supplier | – |
 | GYMHUR (PK) | info@gymhur.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
 | Mughal Apparel (PK) | info@mughalapparel.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
@@ -31,6 +31,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 - Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
 
 ## Log (newest first)
+- 19 Oct 06:15 UTC: Plucky Reach: production manager reviewed, "can definitely assist", asked for phone number. Replied asking for written numbers first (call after). New Asia sent a courtesy sign-off.
 - 19 Oct 02:15 UTC: New Asia declined for good after technical review (garment wash + silk too complex for a first order). Thanked them and closed the thread.
 - 17 Oct 22:15 UTC: Contacted Seam to Seen / Stitch K (LA, garment-dyed hoodies). No other replies.
 - 17 Oct 20:15 UTC: Nr Moda inquiry bounced (listing email invalid); marked Dead. Still only Might Atelier quoting.
