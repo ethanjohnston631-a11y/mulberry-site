@@ -4,13 +4,13 @@ Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all pa
 Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 17 Oct 2026, 22:15 UTC)
+## Status board (updated 19 Oct 2026, 02:15 UTC)
 
 | Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
 |---|---|---|---|---|---|---|---|---|
 | Full Speed 100 (LA) | hq@fullspeed100.com (Sam) | **Parked until December**; told them we'll reach out Dec 1 | – | – | – | 50–100 | – | – |
 | Groovecolor (CN) | info@groovecolor.com (Sunny) | Has PDF; offered client silk 16 Oct | – | – | – | 50–100 | Understood spec | – |
-| New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | Re-engaged 17 Oct: worried about unpicking hood after wash, proposed shell-fabric lining (refused). Sent drop-in lining sequence + pre-washed fabric option | – | – | – | 100 | – | – |
+| New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | **Declined (final) 19 Oct**: technical team won't take garment-washed style with silk lining from a new customer | – | – | – | 100 | – | – |
 | ASBX (PT) | sales@asbx.pt (Maria) | Followed up 16 Oct | – | – | – | 100 (50 w/ surcharge) | – | – |
 | Create Fashion Brand (PT) | hello@createfashionbrand.com | Auto-ack only; 1-pc Sample Room exists | – | – | – | 150 / 50 custom blanks | – | – |
 | White Cotton (PT) | comercial@whitecotton.pt | Followed up 16 Oct | – | – | – | 50 | – | – |
@@ -31,6 +31,7 @@ The hood lining must be genuine 22-momme silk; we can supply the silk.
 - Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
 
 ## Log (newest first)
+- 19 Oct 02:15 UTC: New Asia declined for good after technical review (garment wash + silk too complex for a first order). Thanked them and closed the thread.
 - 17 Oct 22:15 UTC: Contacted Seam to Seen / Stitch K (LA, garment-dyed hoodies). No other replies.
 - 17 Oct 20:15 UTC: Nr Moda inquiry bounced (listing email invalid); marked Dead. Still only Might Atelier quoting.
 - 17 Oct 18:15 UTC: No replies. Only Might Atelier quoting, so searched for new low-MOQ factories; contacted Nr Moda (Istanbul). Other leads (Indie Source, Lefty Production, Inizio, IMPAQQT) skipped: no verifiable email or MOQ too high.
