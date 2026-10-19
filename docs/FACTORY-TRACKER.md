@@ -1,36 +1,40 @@
 # Factory Tracker
 
 Maintained by the Factory Desk agent (runs every 2 hours). Ethan approves all payments.
-Goal: a Sovereign Hoodie sample in Ethan's hands and firm pricing ASAP. First run about 50 pcs, one colorway (Black).
+Goal: a Sovereign Hoodie sample in Ethan's hands ASAP. Minimum order 15 pieces or fewer (Ethan, 19 Oct). One colorway (Black).
 The hood lining must be genuine 22-momme silk; we can supply the silk.
 
-## Status board (updated 19 Oct 2026, 06:15 UTC)
+## Rule (Ethan, 19 Oct): minimum order must be 15 pieces or fewer
+Ethan can't fund a $5k first order. Any maker with a minimum above 15 is dropped. Email sending is revoked; the Factory Desk only reads mail and writes drafts.
 
-| Factory | Contact | Status | Sample cost | Sample speed | Unit @50 | MOQ | Silk? | Terms |
-|---|---|---|---|---|---|---|---|---|
-| Full Speed 100 (LA) | hq@fullspeed100.com (Sam) | **Parked until December**; told them we'll reach out Dec 1 | – | – | – | 50–100 | – | – |
-| Groovecolor (CN) | info@groovecolor.com (Sunny) | Has PDF; offered client silk 16 Oct | – | – | – | 50–100 | Understood spec | – |
-| New Asia / INNBLAC (CN) | min.chen@shanghai-newasia.com.cn | **Declined (final) 19 Oct**: technical team won't take garment-washed style with silk lining from a new customer | – | – | – | 100 | – | – |
-| ASBX (PT) | sales@asbx.pt (Maria) | Followed up 16 Oct | – | – | – | 100 (50 w/ surcharge) | – | – |
-| Create Fashion Brand (PT) | hello@createfashionbrand.com | Auto-ack only; 1-pc Sample Room exists | – | – | – | 150 / 50 custom blanks | – | – |
-| White Cotton (PT) | comercial@whitecotton.pt | Followed up 16 Oct | – | – | – | 50 | – | – |
-| Labwear Studios (PT) | info@labwearstudios.com | Followed up 16 Oct | – | – | – | 50 | – | – |
-| Plucky Reach (LA) | hello@pluckyreach.com | **Says they can do it (19 Oct)**; asked for phone. Kept on email, asked for written sample cost, unit @50, MOQ, silk method, terms | – | – | – | 50 | – | – |
-| DOCSUN (CN, silk) | vip@docsunhomeandliving.com | Asked silk price/m 16 Oct | – | – | – | – | Silk supplier | – |
-| GYMHUR (PK) | info@gymhur.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
-| Mughal Apparel (PK) | info@mughalapparel.com | First inquiry 16 Oct | – | – | – | 50 | – | – |
-| **Might Atelier (TR)** ⭐ | info@mightatelier.com (Furkan Saltık) | **QUOTED 16 Oct.** Confirmed spec + silk sequence; can source 22-momme silk. Asked: silk in sample fee?, mould/setup est., sample shipping, 50-pc option, payment method, photos | €250 (+ mould/setup TBC) | 3–4 wks + 3–5 days express | €72–85 @75 (their silk) / €64–76 (our silk); €64–75 @150 | 75 | Yes (sources it) | Sample upfront; bulk 50/50; bulk 4–6 wks after PP |
-| Nr Moda (TR, Istanbul) | banu@nrmoda.com (Banu) | Dead (address bounced: 550 no such user) | | | | | | |
-| Custom Clothing Turkey (TR) | info@customclothingturkey.com | First inquiry 16 Oct | – | – | – | 100 | – | – |
-| Seam to Seen / Stitch K (LA) | patrick@stitchk.com (Patrick) | First inquiry 17 Oct; garment-dyed knits specialist (CFDA directory) | – | – | – | – | – | – |
-| BOMME Studio (LA) | hello@bommestudio.com | Silent; no one-off samples | – | – | – | – | – | – |
-| Taha Group | info@tahagroup.com | Dead (bounced) | | | | | | |
+## Active (minimum unknown or 15 or fewer)
+| Maker | Contact | Status | MOQ |
+|---|---|---|---|
+| Seam to Seen / Stitch K (LA) | patrick@stitchk.com (Patrick) | Inquiry 17 Oct, no reply. Garment-dyed knits. Minimum not published | Unknown |
+| DOCSUN (CN) | vip@docsunhomeandliving.com | Silk fabric supplier only (asked price/m 16 Oct) | n/a |
+
+## Dropped 19 Oct (minimum above 15)
+| Maker | MOQ | Note |
+|---|---|---|
+| Might Atelier (TR) | 75 | Quoted: sample €250, €72–85/pc at 75. Good fit otherwise; revisit when funded by pre-orders |
+| Plucky Reach (LA) | 50 | Said "can definitely assist", asked for phone |
+| Full Speed 100 (LA) | 50–100 | Parked until December anyway |
+| ASBX (PT) | 100 (50 w/ surcharge) | |
+| Create Fashion Brand (PT) | 150 / 50 custom blanks | Their 1-pc ready blanks could still be a blank source for a DIY prototype |
+| White Cotton (PT) | 50 | |
+| Labwear Studios (PT) | 50 | |
+| Groovecolor (CN) | 50–100 | |
+| GYMHUR (PK) | 50 | |
+| Mughal Apparel (PK) | 50 | |
+| Custom Clothing Turkey (TR) | 100 | |
+| New Asia / INNBLAC (CN) | 100 | Declined anyway |
+| BOMME Studio, Taha Group, Nr Moda | n/a | No samples / dead / bounced |
 
 ## Decisions waiting on Ethan
-- **Might Atelier sample (€250 ≈ $270 + setup/shipping TBC):** recommended once they confirm the all-in sample cost. Note MOQ 75 → first run ≈ €5.4–6.4k (≈ $5.8–6.9k), above the $3–5k range given to Full Speed 100.
-- Fast prototype: buy LA Apparel HF09GD (Black, M) + 1 yd 22-momme silk + local tailor (~$150–250).
+- Low-minimum route: premium heavyweight blank (no minimum) + 22-momme silk + a local Boston-area tailor or sample maker to line the hood (~$150–250 for one).
 
 ## Log (newest first)
+- 19 Oct 12:30 UTC: Ethan: no $5k start order; minimum must be 15 or fewer. Dropped every maker above 15 (all except Seam to Seen, minimum unknown). Email sending revoked; drafts only.
 - 19 Oct 06:15 UTC: Plucky Reach: production manager reviewed, "can definitely assist", asked for phone number. Replied asking for written numbers first (call after). New Asia sent a courtesy sign-off.
 - 19 Oct 02:15 UTC: New Asia declined for good after technical review (garment wash + silk too complex for a first order). Thanked them and closed the thread.
 - 17 Oct 22:15 UTC: Contacted Seam to Seen / Stitch K (LA, garment-dyed hoodies). No other replies.
