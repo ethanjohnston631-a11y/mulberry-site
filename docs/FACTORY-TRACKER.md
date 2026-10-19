@@ -31,7 +31,7 @@ Ethan can't fund a $5k first order. Any maker with a minimum above 15 is dropped
 | BOMME Studio, Taha Group, Nr Moda | n/a | No samples / dead / bounced |
 
 ## Decisions waiting on Ethan
-- Low-minimum route: premium heavyweight blank (no minimum) + 22-momme silk + a local Boston-area tailor or sample maker to line the hood (~$150–250 for one).
+- **Prototype route chosen (19 Oct):** see docs/prototype/PROTOTYPE-KIT.md. Ethan to buy LA Apparel HF09GD blank + 1 yd Dharma 22mm silk charmeuse (ivory recommended; black only in 19.5mm) and book a tailor using docs/prototype/tailor-brief.pdf.
 
 ## Log (newest first)
 - 19 Oct 12:30 UTC: Ethan: no $5k start order; minimum must be 15 or fewer. Dropped every maker above 15 (all except Seam to Seen, minimum unknown). Email sending revoked; drafts only.
