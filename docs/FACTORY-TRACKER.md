@@ -33,7 +33,10 @@ Ethan can't fund a $5k first order. Any maker with a minimum above 15 is dropped
 ## Decisions waiting on Ethan
 - **Prototype route chosen (19 Oct):** see docs/prototype/PROTOTYPE-KIT.md. Ethan to buy LA Apparel HF09GD blank + 1 yd Dharma 22mm silk charmeuse (ivory recommended; black only in 19.5mm) and book a tailor using docs/prototype/tailor-brief.pdf.
 
+- **LA Apparel wholesale account (20 Oct):** Christine Exline (christine.exline@losangelesapparel.net) will approve it if the blanks aren't resold as-is (they won't be; we're lining the hood). She needs the attached Credit Card Authorization form plus a copy of a Sales Tax License. Ethan only: never share card details through the agent. For the single prototype, a retail order on losangelesapparel.net avoids this. Set up wholesale (needs a Massachusetts sales-tax registration via MassTaxConnect) before the 5–15 run.
+
 ## Log (newest first)
+- 24 Oct 03:30 UTC: Session was idle 19–24 Oct; one catch-up pass covered the missed runs. Only new supplier mail: LA Apparel wholesale approval (20 Oct, needs card form + sales tax license; Ethan only). No replies from Stitch K, DOCSUN or any dropped maker.
 - 19 Oct 12:30 UTC: Ethan: no $5k start order; minimum must be 15 or fewer. Dropped every maker above 15 (all except Seam to Seen, minimum unknown). Email sending revoked; drafts only.
 - 19 Oct 06:15 UTC: Plucky Reach: production manager reviewed, "can definitely assist", asked for phone number. Replied asking for written numbers first (call after). New Asia sent a courtesy sign-off.
 - 19 Oct 02:15 UTC: New Asia declined for good after technical review (garment wash + silk too complex for a first order). Thanked them and closed the thread.
